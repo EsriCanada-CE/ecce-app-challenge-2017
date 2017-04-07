@@ -1,6 +1,6 @@
-#Traffic Hazard Data Management App
+# Traffic Hazard Data Management App
 
-##Mission Statement
+## Mission Statement
 
 Deteriorating transportation infrastructure has become a major issue in aging cities, and this significantly complicates urban planning procedures.  For developing and maintaining a logistically, socially, and environmentally sustainable transportation system, it is essential to have an accurate and up-to-date knowledge of hazards within the system (e.g. dangerous road conditions, speeding issues, etc.).  This information is important to have for pedestrians, cyclists, drivers, and public transit users to ensure accessibility of urban areas.
 
@@ -8,7 +8,7 @@ Unfortunately, the costs of obtaining such accurate data ongoingly can be quite 
 
 Our application seeks to satisfy this need to gather and analyze traffic hazard data ongoingly.  As such, our goal is to provide the public with a means to report traffic hazards to city officials, and to provide urban planning experts with a means of intuitively organizing and analyzing this crowd-sourced information.
 
-##App Description
+## App Description
 
 Our application is divided into two main interfaces:
 
@@ -16,7 +16,7 @@ Our application is divided into two main interfaces:
 
 2. A traffic hazard data management interface through which members of the public and transportation experts may summarize and explore the crowd-sourced traffic hazard data.
 
-###Traffic Hazard Data Submission
+### Traffic Hazard Data Submission
 
 To access the Traffic Hazard Data Submission app, visit [this link](http://yorku.maps.arcgis.com/apps/GeoForm/index.html?appid=18109f4e8fef42f29bd066052b139986)
 
@@ -32,7 +32,7 @@ After selecting the attributes associated with the traffic hazard, the user must
 
 Near the top of the GeoForm, there is a link that leads to the Traffic Hazard Data Management interface.
 
-###Traffic Hazard Data Management
+### Traffic Hazard Data Management
 
 To access the Traffic Hazard Data Management app, visit [this link](http://yorku.maps.arcgis.com/apps/webappviewer/index.html?id=808d88de86124bf9934b64a2dbf2a053)
 
