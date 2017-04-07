@@ -1,0 +1,85 @@
+{
+  "hideLayersAfterWidgetClosed": false,
+  "queries": [
+    {
+      "url": "https://services.arcgis.com/E5vyYQKPMX5X3R3H/arcgis/rest/services/Suitability/FeatureServer/0",
+      "name": "Suitability",
+      "icon": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GRIDCODE",
+              "label": "GRIDCODE",
+              "shortType": "number",
+              "type": "esriFieldTypeInteger"
+            },
+            "operator": "numberOperatorIsLessThan",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 8
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "expr": "GRIDCODE < 8"
+          }
+        ],
+        "expr": "GRIDCODE < 8"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": {
+          "default": true,
+          "relationships": [
+            {
+              "relationship": "SPATIAL_REL_INTERSECTS",
+              "label": "intersect"
+            }
+          ],
+          "buffer": {
+            "defaultDistance": 50,
+            "defaultUnit": "METERS"
+          }
+        },
+        "fullLayerExtent": {
+          "default": false
+        }
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          192,
+          80,
+          77,
+          255
+        ],
+        "outline": {
+          "color": [
+            160,
+            63,
+            60,
+            255
+          ],
+          "width": 1.5,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "canModifySymbol": false,
+      "keepResultsOnMapAfterCloseWidget": true,
+      "enableExport": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Suitability_1565"
+    }
+  ]
+}
