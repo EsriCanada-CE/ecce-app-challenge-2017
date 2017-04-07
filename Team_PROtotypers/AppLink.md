@@ -1,0 +1,1 @@
+This app is hosted on ArcGIS Online - you can view it here: [http://teamprototype.maps.arcgis.com/apps/webappviewer/index.html?id=389060a1a38e401ebbec3c187745a1d6](http://teamprototype.maps.arcgis.com/apps/webappviewer/index.html?id=389060a1a38e401ebbec3c187745a1d6)

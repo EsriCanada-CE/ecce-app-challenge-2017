@@ -1,0 +1,8 @@
+Mission Statement
+
+This application allows a user to find the nearest safe bike lockup area from a recreational facility in the city of Waterloo. With a way to easily find the closest safe bike lockup area to reduce the risk of a cyclists bike being stolen, Team PROtotypers hopes to increase ridership and use of sustainable transportation methods.
+
+Application
+
+Since the application was developed using the WebApp Builder, the following link will take you to our web application:
+http://teamprototype.maps.arcgis.com/apps/webappviewer/index.html?id=389060a1a38e401ebbec3c187745a1d6 
