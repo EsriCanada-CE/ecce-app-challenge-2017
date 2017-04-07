@@ -1,32 +1,32 @@
-#**Urth-Routes by EarthLink**
-###ECCE App Challenge 2017
+# **Urth-Routes by EarthLink**
+### ECCE App Challenge 2017
 
 ---------------------------------------------------
 **Team Members:** Jaydeep Mistry, Stephanie Lee, and Carmen Kong
 
 --------------------------------------------------
-##Our Goal
+## Our Goal
 Urth-Route is a navigation app focused on sustainable solutions to transportation by promoting the use of alternate transportation modes to stay healthy and reduce your carbon footprint. By informing users of their estimated emissions released for their trip, users can reflect on their contribution to their carbon footprint and climate change.
 
 We encourage the use of alternative transportation modes such as walking, running, and cycling, which release zero emissions. By showing the convenience and accessibility of biking with the inclusion of Community Access Bikeshare stations and bicycle parking locations across the region of Waterloo, communities can be empowered to having active and greener lifestyles.
 
 ----------------------------------------------------------
-##How to Use Urth-Routes 
+## How to Use Urth-Routes 
 
-####How to Install the App
+#### How to Install the App
 1. Download the _UrthRoutes.zip_ file and extract its contents.
 2. Inside, a folder named 2 holds the entire ArcGIS WebApp along with it’s appropriate files. Move the 2 Folder inside your ArcGIS Web AppBuilder path: arcgis-web-appbuilder-2.3\WebAppBuilderForArcGIS\server\apps\ and rename the old folder.
 3. Open the Web App link of your localhost which will be similar to [_https://localhost:3344/webappbuilder/apps/2/_ ].
 4. When you open the app, you may be prompted for your ArcGIS.com credentials because the Directions service uses the ArcGIS World Routing service.
 5. Once your credentials are verified, the app will be ready to use.
 
-####Set Your Desired Route
+#### Set Your Desired Route
 Select the starting point and destination for your trip by clicking directly on the map or entering addresses or place names into the widget side panel on the left. Urth Routes will suggest the shortest route to get to your end point. Users may choose whether they would like the route to be determined by shortest drive time or distance, or shortest walking time or distance, and additional options are also available. Additional waypoints may also be added to the map for longer routes with more desired stop. For more accurate estimations, driving options should be used  when observing emissions values and walking options should be used for walking and running calorie counts. 
 
-####Consider the Impact of Your Trip
+#### Consider the Impact of Your Trip
 Urth-Routes will calculate and display the amount of carbon dioxide emissions that would be emitted from a small car and calories burned from walking, running, and cycling over your specified trip. The emissions and calories burned values will automatically update as a trip is edited. 
 
-####Customize to Your Details
+#### Customize to Your Details
 The presented emissions and calorie expenditure can be further customized to fit the user.
 For the given carbon dioxide emissions values, the specific fuel efficiency of a user’s car may be entered for an output more accustomed to the user’s needs.
 
@@ -42,8 +42,8 @@ For the calorie expenditure calculations, the user can input their **weight** as
 **Metabolic equivalents (METs)** may also be edited to account for the different intensities of the different activities. A table of METs for various activities can be found here: <https://www.hsph.harvard.edu/nutritionsource/mets-activity-table/>
 
 ---------------------------------------------------------------
-##More About the Application
-###Data Used
+## More About the Application
+### Data Used
 Urth-Routes uses two open data point feature layers from the City of Waterloo’s open data portal. One layer is the City of Waterloo's Bicycle Parking and another is the Community Access Bikeshare Stations. This data is displayed on a web map and the data points can be clicked on for more information in a pop-up.
 
 
@@ -51,7 +51,7 @@ Urth-Routes uses two open data point feature layers from the City of Waterloo’
 
 [**Community Access Bikeshare Stations**](http://opendata-city-of-waterloo.opendata.arcgis.com/datasets/a55e4ab566cd4d33a74ff4deb5bfd15f_0?geometry=-80.722%2C43.424%2C-80.289%2C43.499)
 
-###Build of Application
+### Build of Application
 
 Tools used to create the app:
 - ArcGIS Web AppBuilder 
@@ -74,8 +74,8 @@ The rest of the components of the app, including the user interface, icons, pop-
 - Near me widget
 - Change basemap widget
 
-###Calculations
-####Calories Burned
+### Calculations
+#### Calories Burned
 Total **calories** burned are calculated by multiplying a metabolic equivalent (MET) variable, depending on the type of  physical activity, by the weight of the user in kilograms and the estimated duration of the activity in hours. 
 
 >Calories = MET x Weight (kg) x Time (hours)
@@ -103,7 +103,7 @@ The **metabolic equivalents (METs)** for the three most common sustainable modes
 
 Sources: (Ainsworth, et al., 2011; Jetté, Sidney, & Blümchen, 1990)
 
-####Emissions Savings
+#### Emissions Savings
 **Total emissions savings** are calculated by dividing the **distance** in miles by the **fuel efficiency** of a vehicle which by default is determined using the average fuel efficiency of a small car at 22.4 miles per gallon. This is then multiplied by the amount of **carbon dioxide produced** per gallon of fuel burned (NativeEnergy, n.d.).
 
 >Total Carbon Dioxide Emissions Produced = Driving Distance (Miles) / Fuel Efficiency (Miles per Gallon) x Carbon Dioxide Produced per Gallon Burned (19.56 pounds per gallon)
@@ -116,15 +116,15 @@ The user may enter the specific fuel efficiency of their personal vehicle as wel
 - Fuel Efficiency for a Small Car = 22.4 Miles per Gallon (Can be configured in _Customize_ tab)
 - Carbon Dioxide Produced = 19.56 pounds per gallon 
 
-###Limitations
+### Limitations
 We hoped to use ArcGIS server to have a custom routing service because we wanted to have custom layers of pedestrian walkways, and bike paths but we could not do so because we felt that there was a lack of instructions on how to set it up from scratch. We also spent a lot of time trying to make our own widget for routing, but we had difficulty working with ArcGIS Web Appbuilder so we opted to customize the existing Directions widget instead. We also attempted to use a single HTML page for our app instead of using the Web Appbuilder, but we had difficulty in getting the routing service to connect to ArcGIS Online.
 
-###Acknowledgements
+### Acknowledgements
 We want to acknowledge last year’s University of Waterloo team, UWSpin whom had a similar idea of showing emissions for travel routes, by walking, driving, and busing. They had used their own routing service as well. We took some inspiration from their idea in showing vehicle emissions.
 
 We would also like to thank Scott MacFarlane from the University of Waterloo’s MAD Lab and Michael Leahly from Esri Canada for their help and support.
 
-###References
+### References
 Ainsworth, Barbara E.; Haskell, William L.; Whitt, Melicia C.; Irwin, Melinda L.; Swartz, Ann M.; Strath, Scott J.; O'Brien, William L.; Bassett, David R.; Schmitz, Kathryn H.; Emplaincourt, Patricia O.; Jacobs, David R.; Leon, Arthur S. (2000). "Compendium of Physical Activities: An update of activity codes and MET intensities". _Medicine & Science in Sports & Exercise. 32_ (9 Suppl): S498–504. doi:10.1097/00005768-200009001-00009. PMID 10993420.
 
 Bin, S., & Dowlatabadi, H. (2005). Consumer lifestyle approach to US energy use and the related CO2 emissions. _Energy Policy, 33_(2), 197-208. doi:10.1016/s0301-4215(03)00210-6
