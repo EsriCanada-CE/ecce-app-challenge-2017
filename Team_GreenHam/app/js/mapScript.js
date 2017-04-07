@@ -328,7 +328,7 @@ function showDirections(startCoords, endCoords) {
     console.log("routing from: " + startCoords + "to: " + endCoords);
     // openSpecPopup(endCoords);
     var stops = startCoords[1] + ", " + startCoords[0] + "; " + endCoords[1] + ", " + endCoords[0];
-    var getPromise = $.get("http://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/solve", {
+    var getPromise = $.get("https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/solve", {
         "token": accessToken,
         "stops": stops,
         "f": "json"
@@ -349,7 +349,7 @@ function showDirections(startCoords, endCoords) {
     console.log("routing from: " + startCoords + "to: " + endCoords);
     // openSpecPopup(endCoords);
     var stops = startCoords[1] + ", " + startCoords[0] + "; " + endCoords[1] + ", " + endCoords[0];
-    var getPromise = $.get("http://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/solve", {
+    var getPromise = $.get("https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/solve", {
         "token": accessToken,
         "stops": stops,
         "f": "json"
