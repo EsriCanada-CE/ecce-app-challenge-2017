@@ -1,0 +1,44 @@
+<div style="z-index=-1;">
+<div style="height:100%;">
+    <div class="item" style="width:100%;height:100%;background-color:white;">
+        <div class="content" style="height:100%;">
+				 <h1 class="heading">Calculate Savings</h1>
+				 <br> 
+				 
+				 
+				 <br>
+	
+						<div>
+							<label>Fuel Economy (L/100Km)</label>
+							<input value="" id="x" placeholder="Enter fuel economy here." style="position:relative; width: 100%;" 
+								data-dojo-type="dijit/form/TextBox"/>	
+						</div>
+						<br>
+						<div>
+							<label>Commute Distance (Km)</label>
+							<input value="" id="y" placeholder="Enter commute distance here." style="position:relative; width: 100%;"  
+								data-dojo-type="dijit/form/TextBox"/>	
+						</div>
+						<br>
+						<div>
+							<label>Fuel Cost ($/Litre of gas)</label>
+							<input value="" id="z" placeholder="Enter fuel cost here." style="position:relative; width: 100%;"  
+								data-dojo-type="dijit/form/TextBox"/>	
+						</div>
+						<br>
+						<div class="col-1-2">
+							<input type="button" onclick="calculateIt();" value="Calculate"/>
+						</div>
+						
+						<div>
+						<br>
+						<br>
+						<br>
+						<label style="color: green; size: 2em;" id="label1"></label>
+						<br>
+						<p id="label2"></p>
+						</div>
+        </div>
+    </div>
+</div>
+</div>

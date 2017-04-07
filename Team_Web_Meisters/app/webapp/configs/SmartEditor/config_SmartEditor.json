@@ -1,0 +1,59 @@
+{
+  "editor": {
+    "layerInfos": [
+      {
+        "featureLayer": {
+          "id": "sustainable_places_786"
+        },
+        "disableGeometryUpdate": false,
+        "allowUpdateOnly": false,
+        "allowDelete": false,
+        "fieldInfos": [
+          {
+            "fieldName": "Name",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Address",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Phone",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Website",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Descriptio",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          },
+          {
+            "fieldName": "Bike_Friend",
+            "canPresetValue": false,
+            "isEditable": true,
+            "visible": true
+          }
+        ]
+      }
+    ],
+    "displayPromptOnSave": false,
+    "displayPromptOnDelete": false,
+    "removeOnSave": false,
+    "useFilterEditor": false,
+    "listenToGF": false,
+    "keepTemplateSelected": false,
+    "editDescription": "Select a template to create features"
+  }
+}

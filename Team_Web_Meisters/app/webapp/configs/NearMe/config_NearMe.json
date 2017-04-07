@@ -1,0 +1,214 @@
+{
+  "fontColor": "#000000",
+  "searchLayers": [
+    {
+      "url": "https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Bus_Stops_JRS/FeatureServer/0",
+      "geometryType": "esriGeometryPoint",
+      "id": "Bus_Stops_JRS_4013",
+      "layerId": "0",
+      "baseURL": "https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Bus_Stops_JRS/FeatureServer/",
+      "isMapServer": false,
+      "title": "Bus Stops",
+      "popupInfo": {
+        "title": "Bus Stop",
+        "fieldInfos": [
+          {
+            "fieldName": "FID",
+            "label": "FID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": false
+          },
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": true
+          },
+          {
+            "fieldName": "BUSSTOPID",
+            "label": "BUSSTOPID",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": true
+          },
+          {
+            "fieldName": "STOPNUMBER",
+            "label": "Stop Number",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": true
+          },
+          {
+            "fieldName": "LOCATION",
+            "label": "Location",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": true
+          },
+          {
+            "fieldName": "ACCESSIBLE",
+            "label": "ACCESSIBLE",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": true
+          },
+          {
+            "fieldName": "FDMID",
+            "label": "FDMID",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": true
+          },
+          {
+            "fieldName": "FCODE",
+            "label": "FCODE",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "isEditableOnLayer": true
+          }
+        ],
+        "description": null,
+        "showAttachments": true,
+        "mediaInfos": []
+      },
+      "renderer": {
+        "type": "simple",
+        "symbol": {
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriPMS",
+          "url": "http://static.arcgis.com/images/Symbols/Transportation/esriDefaultMarker_191_Black.png",
+          "imageData": "iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAABGdBTUEAAYagMeiWXwAABJZJREFUeJztm1EobFsYx785dCiKuh6IB0oZpSgenFIoJfGg6KIhHhRFUTwqiUcPCkUUopiLMicPFOHBoZMOJ2SUBw90eXAjhIMzd/1XZ097pn3cO3uv2dizf/VNe82e+b7133v2Xnut7xsKZD7ItlOZHTB7YOYyoEGXk1mKt/hcZt+qq6ut29vbH10uFxnNDg4OPjJ9SUznzq8T7Rb/l81m+9DW1kbNzc1ksVgMZ/X19dTV1UVlZWVBTO9nufg/IHx0dJTW1tbIiEDX1NQUtba2ohmLF0m8xWq10t7eHhmZzc1NSktLwybOvscNz/A8PT1RcHCwux1Q4r0xxetNUlISZWdnuw3t18Cv4tPT06mpqYnGx8dpZWWFHh8f+ZjrdDppdXXVbWjj/bu7O/65kZERamhooNTUVH92T6z4sLAwYg8SND09zYVsbW1RT08PVVZWUk5OjsfNRonQ0FD+uZqaGurr66OdnR26vr7mByM/P59EI0x8S0sLHR8f82eF0tJSLkQE4eHh/GAsLCzQ7u4uv0xEoVk8zvbGxgZ1d3dTVFSUx77l5WUqKCig3Nxcnw3fm52d9fCXkpLCL5PJyUkeVyuaxQ8MDFBmZqbiPvx0ccbk1/f/NXwPj6NKlJeX0/DwsNauaxMfGxvLO/I78vLytLinoqKi3+5DXMTXgibxuLZfuonhjq1lJtbZ2flifK0HV5P4+Ph4j/bh4SGfQPjL4P+l+L4iTHx/fz9hcoShyl8G/2NjY4rx1SBM/NLSEunB3NycYnw1CBOPMV4P5HFeTXxERARFRka6268hPi4ujoKCglT7Ui1eftSvrq7o8vKS9ABxLi4u+DZGGhwAtQgRr9dZlzg6OlLsh6+8S/GirnvV4hMTExU7owfyePJ++Mq7FI/5v1I/fMX82ashYMVjjJcvVpydnZGeIN7z8zPfjo6OppCQEFV+hKzk1NbWkp5gWUz+cKN21UiIeEw99Uw6Dg0Niei2uW4fsJjiAxVTvFYeHh748lJVVRU5HA7yB3a7nSoqKnic29tbIT6FiEfJB7IqExMTVFxczDsqksHBQb5UjcoKxPlVXaEZIeKRYJCDTorE258o/0LEY2VVzkuJDDV4+xPlX4h4JCfxk29sbKT5+XlUPJFI6urqaGZmhvtHHOQFRSBEPCYWNpuNent7qbCwkPxBSUkJ9484IpKUwBzqAhVTfKBiivcVZGikgl6lNTRkVUQWDStlgxBX2o/+qME886JBjau/ERFDs3ispHp3RJ5LE8HJyYlH+/7+nk5PTzX71Swe01n8QUG6LpFNETXrkoA/aa0eB/tNzepQkoIaPJSNJCcn0/r6OolkcXGREhISeB1eTEwMjycCYdc8kgjeBUOi2d/fF+rPvNsHKm7xNzc3/1kV/d5BEbM8ryiJd6HeVWtF41sH5azQyfiJF0n8P1iEzMjI4BXN7e3thjP84QGFDBiWGX/Lxdewh4afWVlZwhcf3wpYXoO+8/Nz5Lb/xHuS+Hlmn9gDi9PhcPzo6Oggo5ndbv/B9GEsTmf2RS4efGWWzAyZfosBDbqszL5Lgv8FOTUUubzpLfcAAAAASUVORK5CYII=",
+          "contentType": "image/png",
+          "width": 11.25,
+          "height": 11.25
+        }
+      }
+    }
+  ],
+  "bufferInfo": {
+    "isVisible": false
+  },
+  "defaultBufferDistance": 300,
+  "maxBufferDistance": 1200,
+  "bufferDistanceUnit": {
+    "bufferUnit": "UNIT_METER",
+    "routeUnit": "METER",
+    "distanceUnit": "meters",
+    "label": "Meters",
+    "acronym": "m",
+    "value": "meters"
+  },
+  "zoomToFeature": false,
+  "intersectSearchedLocation": false,
+  "routeService": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+  "directionLengthUnit": {
+    "bufferUnit": "UNIT_KILOMETER",
+    "routeUnit": "KILOMETERS",
+    "distanceUnit": "kilometers",
+    "label": "Kilometers",
+    "acronym": "km",
+    "value": "kilometers"
+  },
+  "selectedSearchLayerOnly": false,
+  "isGeodesic": false,
+  "showLocationTool": true,
+  "symbols": {
+    "routeSymbol": {
+      "color": [
+        21,
+        99,
+        184,
+        255
+      ],
+      "width": 3.75,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "graphicLocationSymbol": {
+      "angle": 0,
+      "xoffset": 2,
+      "yoffset": 8,
+      "type": "esriPMS",
+      "url": "http://static.arcgis.com/images/Symbols/Basic/GreenShinyPin.png",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMU7nOPkAAAyFSURBVGhD7VlpT5znFY3dpsYsw75vg9lnmBlghmEYhn1YBswAM8CwGHAAE2yIY2zwgoOJwRhju04VN23TRnWcxm6zb06TSm3zsVJVtY1a9UNbJWr7oeoPqJUqSm7PeTyvRKO2yoIHVyrS0bvwLvfcc+95nued++77/9/nz0D/UWv06JJTf2Ct1jq65LCMLVdlPfaTvh2f/4nbdOfAnL1y+KRjafxs9WtjS85fjK9U/3ZixfXrkdOOHw8s2K8On6ps26bQPttrB+cqynvnKm7NXnHL9MU6mb3SIDOXGtT2oceaZP+yS4YXqwCHBI7Zfu4/XN712d4QwqsRZL9/znb78NfccvypNjn2ZKuc+G6bnLrWLotPt8sj32vHfocc+1aLTF2olam1ehlbqhb/bPlGCMP8dK9Cn5S3jJX8XZG45pGlm3tl7ZVuWX2xS1Ze8MoZHJ/5/l5ZutEhp5/xyCK3z+5VBCdXa6nY1U/3phBd1TFufmNyrVZWX+pGwO1y4VaPnH+tW1ZAaO1VbF/yyrmXu+Ts815ZvO6R5ef2Al6o1iFLz3bI2BmnjC07J0MU7n9/TeBYhbExYPyQpXXxLb9s3PLJpbf9INQjK0ESqyBExZZvdiq1zr3cLWeDyi1eb5e5J5ql74j19wsbLRHbTqrvcPlwVUe+6pXLP/IrUpeC2/NQZ/2NHgWlFBR7FMpQndWXupSK3C7d6BT/Q1YZPe1o33ZCPTNlSyZXphy52qwIbbzpUyCxNQS8DqUYOAmtvw5iwf2LwesuQNH113xwvUrxPVR+bNsJBeYrLmYVJ8rIaacixKDPvuhVJFSwb/gUmQvYXqBar4Psm7zOJ+dRhpdRnixHzwNmaR83LW07oZFHHMf1xgQxubJVYFRm5QUYAMqKRrAK8LxSiT2F3uE++2gDJJmEE0+1SuNAsXjGTUe3ndDkmqvG0ZErkfER4t5XIpdAiKTWEbSy6xvATS8Idio7X7wOZ0PPkKjquR/6pG3EKFV4hv9I+d5tJ8QAOqcs7xRXpEm4bpfUDxXLOkrtTrDon1dRgs93KVLLPwAxWDfVUeWJ3umbs4vemMhy+0vPbKnuniCEeVpl85DhtrVJL1EJEWKpy5Lp9TpZQfAMnKCVa/vcHn68SWwtuZKUHSe1/kKBuczeE2S0IPadqpxo3mcUe+seScuNFV1ShOSbkqXWVyB9xypkYqUGxlElXdNlYnPnSGRSpKTiurreAhiC8el7hsz0Rm3E5DmXf+p8zct9c1ZpGiySam+elNVnirkqTYqtyZID08g1JkvanjhJ0sfIHlOiuDpzxY3yBK62jRl33hOEJlaqR5H130wi+xOrLvSDFQpYBD0lzfsM0goEjtw55wZRDxT0jJvF+6BFAnPWDwLztuZ7gggWal8ZWay8hvWNPHyVS4UGwRoHo32ZCt4zViKe/SUgZpbe2VJFyjdTxj4RLBkUBo/bP0QStr9vjn3Tff/AvP3tnlmrWuMcwTxs/7JTqcOASaj9gRLpmDRJ5wEzlcASgWRKOV8T/8Pl0nWoVIZPVkpg3i6Yqd+YuVIftm1KjSw6vtM6ZpLxlVpMd1owZbHLwHyFIqIIoZw6xk04Nkv3QYsMgFAfSWAfizrpx7FvtlztY2kuAwuVJHVzWwhNPOoaZn+0oQ+OfqNF9mH1SWW6kX3PeIlSoAfZ7xgzglQJygxKzNtkENDKjdd0HyyV3sM2GT/rkqnzdSopMJeFkJLix43+OdvP6vuKJXDcIYvPdCBo8x0jQIDuwWKlEpVg76j+AaGRTb2lFAThtlEjklCGFatTZq40QqFqlt8HmAJlhowUHK0QAX9gb8+Xg5eb5BSW1fa2PSpw9oWzMw/zsSLxQkEq03PIgt5hr9hVD5FsL9SBRYsTtt6JY35fYNk9eKFevNOlAvs/EzJCwyfsvR40u7UlD98FWtVKs9CaokhRoYrWHLE265Vds+x8IMNSG11E80PFwFGbImXDNSTEfarLkpt7okXaJ9FvC/Z3QkZocME+04SyKm3Qy5Gvu9VHj7zSZMkojMcgmqWMoNZfAII50oqSYsCji3YZX65SNs1kkLTJlaH6TY1NGFgnMX7NXG6QpiGDdByw/C2khBr6i6SsIZuuBFNoFmtTtujiwiUpI1oM9jTVG83DBmkIFEl9X6E0I2CNqNWtV+fYR2NnqtR1tuYcObhRK7OPuaXGXyRt+0tCR6j/qK3P1ZUnBke6GjRnvlqv3I3ztmhMSCNBLCEjSnLLksXWqpfRhXKZOVeleobKYq3DgBVpV0++FFWkYoqUq9QePOmQGh8IjRnfC5lCwwt2Cwh9nFkUr8rG/zDqf71WlVdSlk4iY8IkMna36OLDJRGKNfXkSGDGJC5foVjqcyTfmi45JcmShfsz8uMlPT8OE9ZqWfh2q7j8xVK1N0/cw8bfhYwQXwRlfpVTkihpCIZLBCy/5dDlOjiUBcEmKDK6hHCJS44EoiQlO1ZyLSmSiSV6YlY0iOpAPlrS8mJVrx1GqXmnrWJ0ZYmru0AaA0XvhpQQvlFP0QBScmIkIU0HU0gRN1abAwsV0gKl6HqJmToEHoW+0kl8KvejJR7HBAml5seKsSpd6gMYtw5a0ZN6Mddkqv7C2PRcSAlhcN3pnTa/lY8lAdWIQJnpsPROyY6RQluqCqwY5pBjTlSllW1IhHJJWD5gC+SjvwrLUqSgPFXKGmnzdL1MccHG2Wsnr3lCNvvWfgLZwZ9EOibN7/PDSDgIhevCJCx8l4RF7JKYRJCDelz3ZBaQENZB5mS15TGRBoW4sNsDYrkgZkISnPiesP+M83qo1CEZgouwLwFfHjxRUYRvAO8aUDp0OH5LCI++Q47GEBEDc4DrRcagp7BVvQUldYmRKMkYSdHHwhTi4XRp6uPI8HH7T09da4sKBaF/IYIXfgXgVD/cUqdPx+D4VA0sONeSKNHJERKXEomvP7slLDJMdoNUUiYMIOhoXKnGoZ+SUJ5pBXFidKKPeguxjrI/P/9kc8zdJKMpwq1SBNgF7AYiAX6ZiQUSgCQENYCR/+16fOjgQGttyJDqtiyx1aWjn1IlH2WVaUAfmVKkEGNPGdyxvp8GUPpHLCGmg8pr77wrvDarcn9QERKJBuKBZCANyAL2AHlAfm5JggcD5dWuB823p1acMvGI/SPfIcttfHP7iDOMlhHjP3pny/4MVV8Hpkyu9KSg4kwYE3dXfqr8JBmqwtqOCxLJwDaHBAADYAJKgXLACrQWFBj/UNfofq+vb+gVQ6HB63A4hvYPjQz1+/o7s7KyeE9qMDFUOhyg+kzcXSGlNb6mDMlQFQahBwqAEqAMsANVgAuoBeqQjXOOSodUO6vFUGBYDv6f15EwyRcBVDUdSARiAP6EQlJUiu/fMqU0dTaXGZXRyDCY0iARkmgA3EArwB+BPTt37LwVGRElGenZH4fvCj+Ac03B63h9ZTARVCkXoNokpSlFw6FKW0Jqc6nxwSwFZo/9wl6hMpZgUFSDREiC36K9AH/8Hdhx3473oyKjxGKx/DV4nv/3ABww6wEnQLVIikqxF5k09qhWeltKSHM0voAv4guZTSNgA2qCZBhkJ9AN+IBeYAT4ky5KJyUlpl9i3w/0BIl1YNsSJOXAthRgkpgsmsMnVfrCZadZ9ObeoS2zLGgAZoC9QHUYGAOkKhqZPuz3A6eBx4HjAM9tJsUksARZfjSQYkAPpAAcBthLWtl9IRvXbmb9khCdjRljff8nQvzpkKVGBRg0gyfmg2QCn4IQy46OyR7VCG2ZOWgKMUMaISpEN2LJ0dlYctVAI0AjoEok1R0kRrVmgIkgSR7zf7yG1/IeGgmdkS757xTackKbS449xHLQA3Q4mkIFoDkcG53GQLXY/OwpKkPFSILHJMJSY5mSDBPCZ9DCWcr8bMUe4qBNI9rSkqO7aKbAeo4BWHZUiY7EjGqk6FY0iHqAfUHXY9AElSC4z/Mkwt7jPVSZ/cgE6QGWGxPH8Y6VsSUDrNZDGiGt7PgS1jYzqM0QCrGvDawMjmMLA6VqJEgweIL7VISuRlVYZryX7sbeoYOyrDV1trTcNhuDphJLYDMpBpANsKdITJv6UDUGq01/SJQuxmOepyK0fd7De2nVGpkY7HOI4Ax+szpbYtufnMcxYxopvpjZ5EDLEmRQzDIDZC8wWJYRy1IDj6kGJ6+8ViPCZ3A6RWU0MqyKzVOfL0wIz1NzKI0UH86MbV42MADWu0aM9U9yLEc2NwOmggT3CZ6nGjQXli6JxABUnsnSlNlyMiT0P/n3TwJZjWQIaMQeAAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 22.5,
+      "height": 22.5
+    },
+    "bufferSymbol": {
+      "color": [
+        255,
+        189,
+        1,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          189,
+          1,
+          255
+        ],
+        "width": 2.25,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "maxResultCount": null,
+  "searchSourceSettings": {
+    "allPlaceholder": "",
+    "showInfoWindowOnSelect": true,
+    "sources": [
+      {
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "name": "Esri World Geocoder",
+        "singleLineFieldName": "SingleLine",
+        "placeholder": "Esri World Geocoder",
+        "countryCode": "",
+        "zoomScale": 20000,
+        "maxSuggestions": 6,
+        "maxResults": 6,
+        "searchInCurrentMapExtent": false,
+        "enableLocalSearch": true,
+        "localSearchMinScale": 300000,
+        "localSearchDistance": 50000,
+        "type": "locator"
+      }
+    ]
+  }
+}
