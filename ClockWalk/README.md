@@ -1,6 +1,6 @@
-\# Vancouver Clock Walk - ECCE App Challenge 2017
+# Vancouver Clock Walk - ECCE App Challenge 2017
 
-\#\# Team Members
+## Team Members
 
 Brendan Lamb
 
@@ -28,12 +28,12 @@ undergraduate at Dalhousie University completing her BSc in Biology and plans to
 continue her studies after graduation with her focus on a career in wildlife
 conservation.
 
-\#\# Mission Statement
+## Mission Statement
 
 The Vancouver Clock Walk fosters sustainable active living through urban
 exploration.
 
-\#\# Description
+## Description
 
 Our app, is designed to encourage people to go out and explore their city
 through sustainable non-motorized transportation. The app works by showing
@@ -43,7 +43,7 @@ learn about their community in small manageable stretches of time, our app not
 only promotes active living but demonstrates how easy it is to move around the
 city without motorized transportation.
 
-\#\# How It Works
+## How It Works
 
 1.  Start the app by finding your location in Vancouver or click on the My
     Location Widget to zoom to your location.
@@ -62,6 +62,6 @@ city without motorized transportation.
     widget, and under the ‘Relate layer’ drop down, select the area you created
     from the Clock Walk Calculator.
 
-\#\# Data Sources
+## Data Sources
 
 -   City of Vancouver Open Data Catalogue
