@@ -1,0 +1,16 @@
+Matthew Kipp
+
+Matthew Kipp is a third year Computer Science student from McMaster University who was raised on the rural roads of Norfolk County. Along with his passion for programming he hopes to help assist the preservation of nature by proposing effective and sustainable solutions to energy-hungry problems.
+
+Jack You
+
+Jack You is a 3rd year Computer Science student at McMaster University from Scarborough. Aside from his interest in programming, he is always eager to learn about the applications of theoretical computer science in solving real world problems.
+
+
+Wei Lu
+
+Wei Lu is a MSc. candidate at McMaster University. Her research interests involve applying spatiotemporal analysis in various aspects of transportation research, especially active travel and route choice analysis.
+
+Sean Leipe
+
+I'm a 4th year student in the Honours Earth and Environmental Science program at McMaster University, with a minor in GIS. I've been working on my undergraduate thesis with Patrick DeLuca, which involves evaluating susceptibility to badland encroachment in Italy using GIS and multicriteria evaluation. My main research interests at the moment are integrating traditional earth science work such as hydrogeology, geophysics, and geomorphology with GIS as I enjoy working in both fields and believe each adds value to the other when they are combined.
