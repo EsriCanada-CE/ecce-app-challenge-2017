@@ -18,7 +18,7 @@ empower Torontonians to make sustainable commute choices.
 App Characteristics
 ======
 
-###Unique Functionality
+### Unique Functionality
 
 Conscious Commuter is an app designed to offer a simple and attractive user interface to engage and inform users to explore their commute patterns
 The app allows for the generation of unique individualized commute reports and tailors the summary report to the specific vehicle, trip frequencies, and 
@@ -27,7 +27,7 @@ The integration of back-end on-the-fly calculation and realtime gas prices creat
 user interactivity and exploration. Users are offered the chance to modify commute descriptors and recieve updated reports to compare how
 different commute habits lead to different impacts.
 
-###Development & Data Creation
+### Development & Data Creation
 
 The Application consists of two primary components: A Leaflet Web Map API hosted within a R Studio Shiny web application framework and an
 Esri ArcGIS Online Cascading Story Map. 

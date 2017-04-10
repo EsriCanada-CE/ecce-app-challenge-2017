@@ -42,7 +42,7 @@ After generating a weekly commute report, you will now have the chance to examin
 About the App
 ======
 
->**Open Data and Software**
+> **Open Data and Software**
 
 This application utilizes a combination of several open source web services and development platforms.
  * Basemaps and web-map services are generated through the Esri Leaflet API
@@ -50,14 +50,14 @@ This application utilizes a combination of several open source web services and 
  * The Commuter Report widgets are developed in R via the Shiny Package - an open source Web Application Framework
  * The Esri ArcGIS Online story map builder, hosts the web application in a Cascading story map interface
 
->**R Shiny Web App Server**
+> **R Shiny Web App Server**
 Shiny is a web application framework for R that can turn analyses into interactive web applications with no knowledge requirement of HTML5, CSS3, or JavaScript (JS). However, having some knowledge of these three front-end languages can make your Shiny app even more interactive. This Shiny app has Esri Leaflet and standard Leaflet API as well as custom JS and CSS files injected into the framework, which enables enhanced calculations and customization. Although this is not a full stack (it does not collect data), this app is considered to be both front-end (presentation) and back-end (calculations). 
 
 ** Flexible User-Experience (UX) **
 The user can drag the Commute and Bike Commute report panels anywhere on the page for their user-interface preference. 
 
 
->**ArcGIS Online**
+> **ArcGIS Online**
 The app is hosted within a configured Cascading story map. This configuration allows for the inclusion of supporting media including infographics, images, and dynamic Web App panes.
 
 ------
