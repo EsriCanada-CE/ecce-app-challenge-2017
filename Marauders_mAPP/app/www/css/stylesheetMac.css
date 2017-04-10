@@ -1,0 +1,141 @@
+syste#header {
+  position: relative;
+  height: auto;
+  width: auto;
+  background-color: white;
+}
+
+body {
+  width: 100%;
+  min-width: 600px;
+  max-width: 2000px;
+  margin: auto;
+}
+
+#ghw-logo {
+  float: left;
+  width: 100%;
+  height: 150px;
+  max-height: 300px;
+  min-height: 0;
+  text-indent: -9999px;
+  background: url(../img/ghw.jpg) top left no-repeat;
+  background-size: contain;
+  margin-bottom: 21px;
+}
+
+img.img2 {
+  float: right;
+}
+
+strong.specColor {
+  color: #056e9e;
+}
+
+hr.mac {
+  border-bottom: 3px solid;
+  max-width: 400px;
+  color: #056e9e;
+}
+
+#go {
+  width: auto;
+  height: auto;
+  background-color: #3385D6;
+  border-width: 3;
+  border-style: outset;
+  border-radius: 15px;
+  font-family: Arial;
+  cursor: pointer;
+  font-size: 16;
+  font-weight: bold;
+  color: black;
+}
+
+.nav {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index:999;
+  width:100%;
+}
+
+#TosLink {
+  cursor: pointer;
+}
+
+#TosLink2{
+  cursor: pointer;
+}
+
+#optionGend {
+  text-indent: 5px;
+}
+
+#optionMarit {
+  text-indent: 2px;
+}
+
+label {
+  text-indent: 3px;
+}
+
+input {
+  margin: 10px;
+}
+
+#myButton {
+  width: auto;
+  height: auto;
+  background-color: #3385D6;
+  border-width: 3;
+  border-style: outset;
+  border-radius: 20px;
+  font-family: Arial;
+  cursor: pointer;
+  margin:15px;
+}
+
+#button1 {
+  width: auto;
+  height: auto;
+  background-color: #3385D6;
+  border-width: 3;
+  border-style: outset;
+  border-radius: 20px;
+  font-family: Arial;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#button2 {
+  width: auto;
+  height: auto;
+  background-color: #3385D6;
+  border-width: 3;
+  border-style: outset;
+  border-radius: 20px;
+  font-family: Arial;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#button3 {
+  width: auto;
+  height: auto;
+  background-color: #38C319;
+  border-width: 3;
+  border-style: outset;
+  border-radius: 20px;
+  font-family: Arial;
+  cursor: pointer;
+  margin: 15px;
+}

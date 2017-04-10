@@ -1,0 +1,11 @@
+Anastassios Dardas
+
+Anastassios Dardas is a 2nd year PhD student at McMaster University, specializing in spatio-temporal health geography. He believes that by integrating the disciplines of GIS and data science together can develop more effective decision-making process and predictions. During his free time, he enjoys hiking, biking, coaching crew, hanging out with friends, and doing Tough Mudder.
+
+Spencer Elford
+
+Spencer is a 5th Year Honours Earth & Environmental Sciences Student at McMaster University. He is currently pursuing a minor in GIS. His main interests lie in data visualization and GIS for Urban Planning. In addition to his GIS interests, he is interested in mountain biking, hiking and historical cartography.
+
+Karl Chastko
+
+I am currently completing my final year at McMaster university where I am studying Earth and Environmental Science with a minor in GIS. Although my major is Earth and Environmental Sciences my passion is GIS. I am interested in using GIS for the environment, health and planning as well as data visualization. In my spare time I enjoy home brewing, disk golf and gardening.
