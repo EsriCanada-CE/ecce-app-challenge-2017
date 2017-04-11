@@ -1,7 +1,7 @@
 # GISoar
 Reduce Carbon emission of your flight
 ## Link to App
-Find the application using the following link: http:/...
+Find the application using the following link: [https://esricanada-ce.github.io/ecce-app-challenge-2017/GISoar/app/](https://esricanada-ce.github.io/ecce-app-challenge-2017/GISoar/app/)
 ## Description
 This application allow choosing of the flight with minimum emission in order to promote sustainable transportation.
 ## Usage
