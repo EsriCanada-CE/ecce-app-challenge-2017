@@ -1,0 +1,25 @@
+.bg-primary {
+  background-color: #1164ED;
+}
+
+#pic {
+  height: 225px;
+  width: 225px;
+  border-radius: 50%
+}
+
+#placer {
+  position:relative;
+  left: 280px;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 3px solid white;
+}
+
+u.spec {
+  text-decoration: none;
+  border-bottom: 3px solid;
+  color: #056e9e;
+}

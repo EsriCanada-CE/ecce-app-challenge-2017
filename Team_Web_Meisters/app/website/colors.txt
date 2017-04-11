@@ -1,0 +1,8 @@
+2A00FF
+blue
+
+FF0084
+pink
+
+FFD800
+yellow

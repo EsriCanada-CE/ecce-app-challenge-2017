@@ -1,0 +1,17 @@
+Sustainable Transportation:Toronto
+
+Instructions for running the Web application
+
+This Web Application which makes use of various openly shared resources including BootStrap (Calcite Maps) and ESRI hosted data such as Basemaps. In order to view the application, one must either make use of a server to host the app folder or view it locally if a local server is set up. 
+
+Q) How to set up a local server?
+There are various ways to go about it. Our team used Xampp to view and debug the application. The following steps indicate how to get the local server working using Xampp.
+1.	Download Xampp: https://www.apachefriends.org/index.html
+2.	Install Xampp (use default settings)
+3.	After installation, launch the application and start the Apache and MySQL services
+4.	Navigate to the installation folder of Xampp
+5.	Find the "htdocs" folder
+6.	Copy and paste the app folder into the "htdocs" folder. Now the app is ready to be viewed using any browser.
+7.	Open an internet browser. Type the following address: http://localhost/mytoronto/index.html
+8.	Now the app can be viewed locally. 
+-----------------------------------------------------------------------------------------------------------------------------------Similarly, if someone has a web server ready, the app folder can simply be copied to the desired path and accessed using the corresponding url, ensuring that the index file is ultimately referred to (.../mytoronto/index.html).

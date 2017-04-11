@@ -1,0 +1,92 @@
+{
+  "layerInfos": [
+    {
+      "name": "Carbon",
+      "id": "Carbon_3345",
+      "layer": {
+        "url": "http://services1.arcgis.com/V0HKtaD602PKtWJz/arcgis/rest/services/Carbon/FeatureServer/0",
+        "fields": [
+          {
+            "name": "Start",
+            "alias": "Start",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "End_",
+            "alias": "End",
+            "show": true,
+            "format": null
+          },
+          {
+            "name": "Carbon_Footprint",
+            "alias": "Carbon Footprint",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Distance__km_",
+            "alias": "Distance (km)",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "POINT_X",
+            "alias": "POINT_X",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "POINT_Y",
+            "alias": "POINT_Y",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false
+    },
+    {
+      "name": "SampledAirports",
+      "id": "SampledAirports_4082_0",
+      "layer": {
+        "url": ""
+      },
+      "show": true,
+      "showAttachments": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": true,
+  "initiallyExpand": false,
+  "filterByMapExtent": true
+}

@@ -1,0 +1,93 @@
+*{
+	font-family: sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#fuelcalc{
+	
+	vertical-align: top;
+	border-radius: 4px;
+	margin-top: 4px;
+	height: 320px;
+	z-index: 1;
+	display: inline-block;
+	background: #ff0084; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ff0084 0%, #2a00ff 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ff0084 0%,#2a00ff 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ff0084 0%,#2a00ff 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#2a00ff',GradientType=1 );
+}
+
+.micro-container{
+	width: 350px;
+	padding: 25px;
+	padding-top: 10px;
+	z-index: 0;
+	
+}
+
+.input-wrap{
+	background-color: red;
+}
+
+
+.fuel input[type=text]{
+	width:200px;
+	font-size: 16px;
+	border-radius: 10px;
+	text-align: center;
+	border-style: none;
+	margin-bottom: 20px;
+}
+
+.fuel input[type=BUTTON]{
+	padding: 4px;
+	font-size: 16px;
+	color: white;
+	background-color: #0AB9F2;
+	border-radius: 10px;
+	text-align: center;
+	border-style: none;
+	cursor: pointer;
+	font-weight: 700;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.fuel input[type=BUTTON]:hover{
+	background-color: #FE72DD;
+	
+}
+
+.text-output{
+	width: 100px;
+	border-radius: 10px;
+	display: inline-block;
+	float: left;
+	margin-right:2px;
+	text-align: center;
+	height: 18px;
+}
+
+.fuel-results-name{
+	text-align:right;
+}
+
+.fuel-results{
+	text-align: left;
+	min-width:80px;
+}
+
+#fuel-results-table{
+	width: 300px;
+}
+
+#fuelcontent{
+	padding-top:10px;
+}

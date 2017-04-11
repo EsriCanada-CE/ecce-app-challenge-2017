@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Readme</title>
+  <style>
+.selector{color:red;}
+.heading{
+background-color:#D8E0E2;
+background-repeat:repeat-x;
+border-bottom:1px solid #FFFFFF;
+border-top:1px solid #FFFFFF;
+color:black;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:16px;
+font-weight:bold;
+letter-spacing:1.1px;
+margin:15px 0 10px;
+padding:3px 10px;
+text-align:center;
+}
+  </style>
+
+ </head>
+
+<body>
+<h3>Deploy Map2Green</h3>
+<p>Do the following to deploy the app on your server:</p>
+<ul>
+	<ol>
+	  <li>Unzip the downloaded app.</li>
+	  <li>Deploy it on your web server.</li>
+	  <li>Browse to the directory where the app from step 2 is locally hosted and open the app <strong>config.json</strong> file.</li>
+	  <li>Add a proxy to your app. Refer to <a
+href="http://doc.arcgis.com/en/web-appbuilder/manage-apps/use-proxy.htm">Use proxy</a> for details. <br>
+	  <i>*Important: Make sure that the proxy applied to your app works as expected. The map or widgets might fail if the proxy is set inappropriately.</i></li>
+	  <li>Add and register the app. Refer to <a href="http://doc.arcgis.com/en/arcgis-online/share-maps/add-items.htm"> Add apps </a> and <a href="http://doc.arcgis.com/en/arcgis-online/share-maps/add-items.htm#REG_APP">Register your app </a> for details.</li>
+	  <li>Copy and paste the AppID to the appId property in the <strong>config.json</strong> file. <br>
+	  <i>Note: Skip step 5 and 6 if the app connects to a web-tire authenticated portal.</i></li>
+	  <li>Save the <strong>config.json</strong> file. </li>
+	  <li>View the locally hosted app in your browser.</li>
+	</ol>
+</ul>
+<h3>Browser requiremets</h3>
+<p>Supported browsers for Map2Green*:</p>
+<ul>
+  <li>Chrome</li>
+  <li>Firefox</li>
+  <li>Safari 3+</li>
+  <li>Edge</li>
+  <li>Internet Explorer 9+. Internet Explorer 8 or lower is not supported.</li>
+</ul>
+<h3>Map2Green Goals</h3>
+<p>Map2Green aims to:</p>
+<ul>
+	<ol>
+	  <li>Help meet the city of Vancouver's goals for achieving sustainable transportation.</li>
+	  <li>Streamline the process of finding locations in which sustainable transportation infrastructure can be implemented or enhanced.</li>
+	  <li>Use real-time citizen-based route data.</li>
+	  <li>Launch app live <a href="http://www.sfu.ca/geog/ESRI_app"> here</a>.</li>
+	</ol>
+</ul>
+<h3>How to use Map2Green</h3>
+<p>Do the following to use the app:</p>
+<ul>
+	<ol>
+	  <li>Load app.</li>
+	  <li>Read instructions.</li>
+	  <li>Explore map presenting locations in Vancouver ranked for accessibility to sustainable transportation where 10 is highly accessible and 0 is not accessible. Use the legend tab to aid in exploration.</li>
+	  <li>Select widget icon [1] in upper left corner to load citizen route data from the Map2Green Collector app.</li>
+	  <li>Select widget icon [2] to find the locations in the city of Vancouver that have limited access to sustainable transportation and are travelled by citizens. Make sure the routes are used as the input. The buffer value may be adjusted, however 50 m is the default.</li>
+	</ol>
+</ul>
+</body>
+</html>

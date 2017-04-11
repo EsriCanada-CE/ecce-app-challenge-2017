@@ -1,0 +1,11 @@
+# Introduction
+
+You-Lock is an application developed by Team PROtotypers, a group of three University of Waterloo students using the ESRI ArcGIS WebApp Builder platform. This application allows a user to find the nearest safe bike lockup area from a recreational facility in the city of Waterloo. With a way to easily find the closest safe bike lockup area to reduce the risk of a cyclists bike being stolen, Team PROtotypers hopes to increase ridership and use of sustainable transportation methods. 
+
+# Using the widgets
+
+At the bottom of the screen, there is a group of four circular buttons. Each button opens a widget that provides functionality. The leftmost widget opens a legend, displaying symbology information. The button next to the Legend button is the Layers button, which allows you to toggle layers on and off, change transparency of layers, and enable as well as disable pop ups for layers.
+
+The third button allows access to the widget that provides the functionality of the app. It is the Near Me widget. There are two ways of using this widget to search the area for bike racks, the first being the Set Location pin button next to the search bar. This allows you to click anywhere on the map and it will pull up all bike racks, recreational facilities, parks and bus stops within the set buffer distance. The buffer distance can be changed using the interactive slider, with the maximum buffer distance set to 1.5 kilometers. The second way of setting a location is by searching for the name or address of a recreational facility. It has an autocomplete drop down feature, allowing you to enter a partial query and allowing the application to auto-complete the search. Once you have set your location and search radius, you can then select the destination type (Park, recreational facility, bike lock, or bus stop) and get directions to and from the selected location. 
+
+To filter out recreational facilities by amenities offered, the brown button on the left allows you to only show amenities with features you select. Selecting multiple features (such as a swimming pool and splash pad) will only display on the map facilities that have those two amenities. Selecting more will narrow down the number of facilities further on the web map.

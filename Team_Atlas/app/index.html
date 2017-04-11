@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="My Carbon Footprint (TEAM ATLAS), ESRI ECCE APP CHALLENGE 2017">
+    <meta name="author" content="">
+    <link rel="icon" href="https://www.esri.com/favicon.ico">
+    <title>Sustainable Toronto</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/3.19/dijit/themes/claro/claro.css">
+
+    <!-- Calcite Maps Bootstrap -->
+    <link rel="stylesheet" href="dist/css/calcite-maps-bootstrap.min-v0.3.css">
+
+    <!-- Calcite Maps -->
+    <link rel="stylesheet" href="dist/css/calcite-maps-arcgis-3.x.min-v0.3.css" -->
+
+    <!-- ArcGIS JS 3.x -->
+    <link rel="stylesheet" href="https://js.arcgis.com/3.19/esri/themes/calcite/dijit/calcite.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.19/esri/themes/calcite/esri/esri.css">
+
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #HomeButton {
+            position: absolute;
+            top: 95px;
+            left: 15px;
+            z-index: 50;
+        }
+    </style>
+</head>
+
+<body class="calcite calcite-maps calcite-nav-top calcite-margin-all calcite-zoom-top-left calcite-layout-inline-left">
+
+    <script type="text/javascript">
+        var dojoConfig = {
+            packages: [{
+                    name: "bootstrap",
+                    //location: "https://esri.github.io/calcite-maps/dist/js/dojo-bootstrap"
+                    location: location.pathname.replace(/\/[^/]+$/, "") + "dist/vendor/dojo-bootstrap"
+                },
+                {
+                    name: "calcite-maps",
+                    //location: "https://esri.github.io/calcite-maps/dist/js/dojo"
+                    location: location.pathname.replace(/\/[^/]+$/, "") + "dist/js/dojo"
+                }
+            ]
+        };
+    </script>
+
+    <!-- ArcGIS JS 3.x -->
+    <script src="https://js.arcgis.com/3.19/"></script>
+
+    <script>
+        require([
+            // ArcGIS
+            "esri/map",
+            "dojo/on",
+            "esri/dijit/Search",
+            "esri/dijit/HomeButton",
+            "esri/InfoTemplate",
+            "esri/layers/FeatureLayer",
+            "esri/dijit/PopupTemplate",
+            "esri/renderers/BlendRenderer",
+            "esri/symbols/SimpleFillSymbol",
+            "esri/symbols/SimpleLineSymbol",
+            "esri/Color",
+            "dijit/registry",
+            "dojo/parser",
+            "dojox/grid/DataGrid",
+            "dojo/query",
+            "dijit/form/Button",
+            "dojo/ready",
+            "dojo/domReady!",
+
+            // Calcite Maps
+            "calcite-maps/calcitemaps-v0.3",
+
+            // Bootstrap
+            "bootstrap/Collapse",
+            "bootstrap/Dropdown",
+            "bootstrap/Tab",
+
+            "dojo/domReady!"
+        ], function(Map, on, Search, HomeButton, InfoTemplate, FeatureLayer, PopupTemplate, BlendRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, registry, parser, DataGrid, query, Button, ready, CalciteMaps) {
+
+            parser.parse();
+
+            // App 
+            var app = {
+                map: null,
+                basemap: "streets-navigation-vector",
+                center: [-79.40, 43.74], //Coordinates of Toronto Region 
+                zoom: 10,
+                initialExtent: null
+            }
+
+            // Map 
+            map = new Map("mapViewDiv", {
+                basemap: app.basemap,
+                center: app.center,
+                zoom: app.zoom,
+                padding: {
+                    top: 50,
+                    bottom: 0
+                },
+                breakpoints: {
+                    xsmall: 768,
+                    small: 769,
+                    medium: 992,
+                    large: 1200
+                }
+            });
+            map.on("load", function() {
+                app.initialExtent = map.extent;
+            })
+
+            /******************************************************************
+             *
+             * Add Home Widget...
+             * 
+             ******************************************************************/
+
+            // Home Button
+            var home = new HomeButton({
+                map: map,
+                position: "top-left"
+            }, "HomeButton");
+            home.startup();
+
+            /******************************************************************/
+
+            /******************************************************************
+             *
+             * Popup Template for Neighborhood Regions...
+             * 
+             ******************************************************************/
+
+            var template = new PopupTemplate({
+                "title": "{AREA_NAME}",
+                "fieldInfos": [{
+                    "fieldName": "AREA",
+                    "label": "Area (sq. km)",
+                    "visible": true,
+                    "format": {
+                        "places": 0,
+                        "digitSeparator": true
+                    }
+                }, {
+                    "fieldName": "STOPS",
+                    "label": "Bus Stops",
+                    "visible": true,
+                    "format": {
+                        "places": 0,
+                        "digitSeparator": true
+                    }
+                }, {
+                    "fieldName": "FREQUENCY",
+                    "label": "Bus Stops (per sq. km)",
+                    "visible": true,
+                    "format": {
+                        "places": 0,
+                        "digitSeparator": true
+                    }
+                }, {
+                    "fieldName": "BIKE",
+                    "label": "Bike Rack Locations",
+                    "visible": true,
+                    "format": {
+                        "places": 0,
+                        "digitSeparator": true
+                    }
+                }, {
+                    "fieldName": "MALLS",
+                    "label": "Supermarkets",
+                    "visible": true,
+                    "format": {
+                        "places": 0,
+                        "digitSeparator": true
+                    }
+                }, {
+                    "fieldName": "SCHOOL",
+                    "label": "Schools",
+                    "visible": true,
+                    "format": {
+                        "places": 0,
+                        "digitSeparator": true
+                    }
+                }, {
+                    "fieldName": "POI",
+                    "label": "Points of Interest",
+                    "visible": true,
+                    "format": {
+                        "places": 0,
+                        "digitSeparator": true
+                    }
+                }]
+            });
+
+
+            /******************************************************************
+             *
+             * Setting parmeters for the Renderer...
+             * 
+             ******************************************************************/
+			// Service URL of Toronto Neighborhoods
+			layerUrl = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/NEIGHBORHOODS/FeatureServer/0";
+			
+            // SCHOOLS vs TRANSIT Renderer
+            var blendRendererOptions = {
+                blendMode: "darken",
+                symbol: new SimpleFillSymbol().setOutline(new SimpleLineSymbol().setWidth(0)),
+                fields: [{
+                    field: "SCHOOL",
+                    color: new Color("#0000FF")
+                }],
+                opacityStops: [{
+                    value: 0,
+                    opacity: 0
+                }, {
+                    value: .3,
+                    opacity: .3
+                }, {
+                    value: .6,
+                    opacity: .6
+                }],
+                normalizationField: "STOPS"
+            };
+            renderer = new BlendRenderer(blendRendererOptions);
+
+			// Add SCHOOLS vs TRANSIT layer to Map
+            layer1 = new FeatureLayer(layerUrl, {
+                outFields: ["*"],
+                opacity: 1,
+                infoTemplate: template
+            });
+            layer1.setRenderer(renderer);
+
+			// Pair with the button functionality
+            registry.byId("bschoolst").on("click", function(e) {
+				cleanup();
+                map.addLayer(layer1);
+            })
+			/******************************************************************/
+
+            // POINTS OF INTEREST vs TRANSIT Renderer
+            var blendRendererOptions = {
+                blendMode: "darken",
+                symbol: new SimpleFillSymbol().setOutline(new SimpleLineSymbol().setWidth(0)),
+                fields: [{
+                    field: "POI",
+                    color: new Color("#FF0000")
+                }],
+                opacityStops: [{
+                    value: 0,
+                    opacity: 0
+                }, {
+                    value: .3,
+                    opacity: .3
+                }, {
+                    value: .6,
+                    opacity: .6
+                }],
+                normalizationField: "STOPS"
+            };
+            renderer = new BlendRenderer(blendRendererOptions);
+
+            // Add POINTS OF INTEREST vs TRANSIT layer to Map
+            layer2 = new FeatureLayer(layerUrl, {
+                outFields: ["*"],
+                opacity: 1,
+                infoTemplate: template
+            });
+            layer2.setRenderer(renderer);
+            
+			// Pair with button functionality...
+            registry.byId("bpoit").on("click", function(e) {
+				cleanup();
+                map.addLayer(layer2);
+            })
+			/******************************************************************/
+
+            // SCHOOL vs CYCLING Renderer
+            var blendRendererOptions = {
+                blendMode: "darken",
+                symbol: new SimpleFillSymbol().setOutline(new SimpleLineSymbol().setWidth(0)),
+                fields: [{
+                    field: "SCHOOL",
+                    color: new Color("#41f45c")
+                }],
+                opacityStops: [{
+                    value: 0,
+                    opacity: 0
+                }, {
+                    value: .3,
+                    opacity: .3
+                }, {
+                    value: .6,
+                    opacity: .6
+                }],
+                normalizationField: "BIKE"
+            };
+            renderer = new BlendRenderer(blendRendererOptions);
+
+			//Add SCHOOL vs CYCLING layer to Map
+            layer3 = new FeatureLayer(layerUrl, {
+                outFields: ["*"],
+                opacity: 1,
+                infoTemplate: template
+            });
+            layer3.setRenderer(renderer);
+
+			// Pair with button functionality...
+            registry.byId("bschoolsc").on("click", function(e) {
+				cleanup();
+                map.addLayer(layer3);
+            }) 
+			/******************************************************************/
+
+            // POINTS OF INTEREST vs CYCLING Renderer
+            var blendRendererOptions = {
+                blendMode: "darken",
+                symbol: new SimpleFillSymbol().setOutline(new SimpleLineSymbol().setWidth(0)),
+                fields: [{
+                    field: "POI",
+                    color: new Color("#f441ca")
+                }],
+                opacityStops: [{
+                    value: 0,
+                    opacity: 0
+                }, {
+                    value: .3,
+                    opacity: .3
+                }, {
+                    value: .6,
+                    opacity: .6
+                }],
+                normalizationField: "BIKE"
+            };
+            renderer = new BlendRenderer(blendRendererOptions);
+
+            // Add POINTS OF INTEREST vs CYCLING layer to Map
+            layer4 = new FeatureLayer(layerUrl, {
+                outFields: ["*"],
+                opacity: 1,
+                infoTemplate: template
+            });
+            layer4.setRenderer(renderer);
+
+			// Pair with button functionality...
+            registry.byId("bpoic").on("click", function(e) {
+				cleanup();
+                map.addLayer(layer4);
+            }) 
+
+            // Cleanup Function : Used to erase existing layers from previous uses...
+            function cleanup() {
+				// Remove existing layers...
+				map.removeAllLayers(); 
+				// Add relevant layers...
+				map.setBasemap(app.basemap);
+				map.addLayer(NEIGHB);
+				map.addLayer(TTC_STOPS);
+				map.addLayer(SUBWAY);
+				map.addLayer(POI);
+				map.addLayer(SCHOOL);
+				map.addLayer(MALLS);
+				map.addLayer(BIKES);
+            }
+
+            /******************************************************************
+             *
+             * Add Search Widgets...
+             * 
+             ******************************************************************/
+
+            // Navigation Search
+            var searchNav = new Search({
+                map: map,
+                maxSuggestions: 3
+
+            }, "searchNavDiv");
+
+            /******************************************************************
+             *
+             * Add Layers...
+             * 
+             ******************************************************************/
+
+            // NEIGHBORHOOD 
+            layerUrl = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/NEIGHBORHOODS/FeatureServer/0";
+            var NEIGHB = new FeatureLayer(layerUrl, {});
+            map.addLayer(NEIGHB); // Adds NEIGHBORHOOD Layer
+
+            // TTC Stops
+            var template = new InfoTemplate();
+            template.setTitle("<b>TTC BUS STOP</b>");
+            template.setContent("${stop_name}");
+            url = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/Bus_Stops_(TTC)/FeatureServer/0";
+            var TTC_STOPS = new FeatureLayer(url, { // READ TTC STOPS LAYER
+                infoTemplate: template,
+                outFields: ["*"]
+            });
+            map.addLayer(TTC_STOPS); // Adds TTC STOPS Layer
+
+            // TTC SUBWAY
+            var template = new InfoTemplate();
+            template.setTitle("<b>TTC SUBWAY LINE</b>");
+            template.setContent("${SBWAY_NAME}");
+            url = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/Subway_Lines_(TTC)/FeatureServer/0";
+            var SUBWAY = new FeatureLayer(url, { // READ TTC SUBWAY LAYER
+                infoTemplate: template,
+                outFields: ["*"]
+            });
+            map.addLayer(SUBWAY); // Adds TTC SUBWAY Layer
+
+            // POI
+            var template = new InfoTemplate();
+            template.setTitle("<b>POINTS OF INTEREST</b>");
+            template.setContent("<strong>${NAME}</strong><br/>" + "<i>${INFO}</i>");
+            url = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/PointsOfInterest/FeatureServer/0";
+            var POI = new FeatureLayer(url, { // READ TTC STOPS LAYER
+                infoTemplate: template,
+                outFields: ["*"]
+            });
+            map.addLayer(POI); // Adds Points of Interest Layer
+
+            // PLACES OF WORSHIP
+            var template = new InfoTemplate();
+            template.setTitle("<b>PLACES OF WORSHIP</b>");
+            template.setContent("<strong>${ORGANIZATI}</strong><br/>" + "<i>Faith: ${FAITH}</i>");
+            url = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/PlacesOfWorship_(Toronto)/FeatureServer/0";
+            var POW = new FeatureLayer(url, { // READ PLACES OF WORSHIP LAYER
+                infoTemplate: template,
+                outFields: ["*"]
+            });
+            map.addLayer(POW); // Adds POI Layer
+
+            // SCHOOLS 
+            var template = new InfoTemplate();
+            template.setTitle("<b>SCHOOL</b>");
+            template.setContent("<strong>${NAME}</strong><br/>" + "<i>${BRD_NAME}</i>");
+            url = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/Schools_(Toronto)/FeatureServer/0";
+            var SCHOOL = new FeatureLayer(url, { // READ SCHOOLS LAYER
+                infoTemplate: template,
+                outFields: ["*"]
+            });
+            map.addLayer(SCHOOL); // Adds SCHOOL Layer
+
+            // SUPERMARKETS 
+            var template = new InfoTemplate();
+            template.setTitle("<b>SUPERMARKET</b>");
+            template.setContent("<strong>${Name}</strong>");
+            url = "http://services7.arcgis.com/jywwsH13GOcFAfkn/arcgis/rest/services/Shopping_Malls/FeatureServer/0";
+            var MALLS = new FeatureLayer(url, { // READ SUPERMARKETS LAYER
+                infoTemplate: template,
+                outFields: ["*"]
+            });
+            map.addLayer(MALLS); // Adds SCHOOL Layer
+
+            // BIKE RACK LOCATIONS 
+            url = "http://services7.arcgis.com/8etbC7lHFs7qVBF2/arcgis/rest/services/Bike_Rack_Locations_(Toronto)/FeatureServer/0"
+            var BIKES = new FeatureLayer(url, {});
+            map.addLayer(BIKES); // Adds BIKE RACK LOCATIONS Layer
+
+            /******************************************************************/
+
+
+            /******************************************************************/
+            // Home
+            query(".calcite-navbar .navbar-brand").on("click", function(e) {
+                map.setExtent(app.initialExtent);
+            })
+
+        });
+    </script>
+
+    <!-- Navbar -->
+
+    <nav class="navbar calcite-navbar navbar-fixed-top calcite-text-light calcite-bg-dark calcite-bgcolor-dark-green">
+        <!-- Menu -->
+        <div class="dropdown calcite-dropdown calcite-bg-light calcite-text-dark" role="presentation">
+            <a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="calcite-dropdown-toggle">
+                    <span class="sr-only">Toggle dropdown menu</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a role="button" data-target="#about" aria-haspopup="true"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                <li><a role="button" data-target="#publicT" aria-haspopup="true"><span class="glyphicon glyphicon-superscript"></span> Public Transportation</a></li>
+                <li><a role="button" data-target="#cycling" aria-haspopup="true"><span class="glyphicon glyphicon-leaf"></span> Cycling</a></li>
+            </ul>
+        </div>
+        <!-- Title -->
+        <div class="calcite-title calcite-overflow-hidden">
+            <span class="calcite-title-main">Sustainable Transportation: Toronto</span>
+            <span class="calcite-title-divider hidden-xs"></span>
+            <span class="calcite-title-sub hidden-xs">Team Atlas</span>
+        </div>
+        <!-- Nav -->
+        <ul class="calcite-nav nav navbar-nav">
+            <li>
+                <div class="calcite-navbar-search hidden-xs">
+                    <div id="searchNavDiv"></div>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+    <!--/.navbar -->
+
+    <!-- Map Container  -->
+    <div class="calcite-map">
+        <div id="mapViewDiv" class="calcite-map-absolute"></div>
+    </div>
+    <!-- /.container -->
+
+
+    <!-- About Panel -->
+    <div class="calcite-panels calcite-panels-right calcite-bg-light calcite-text-dark panel-group">
+        <div id="about" class="panel collapse">
+            <div id="headingabout" class="panel-heading calcite-bgcolor-light-green">
+                <div class="panel-title">
+                    <a class="panel-toggle collapsed" role="button" data-toggle="collapse"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span><span class="panel-label">Sustainable Transportation</span></a>
+                    <a class="panel-close" role="button" data-toggle="collapse" data-target="#about"><span class="esri-icon esri-icon-close" aria-hidden="true"></span></a>
+                </div>
+            </div>
+            <div id="headingaboutt" class="panel-body">
+                This app provides information about the sustainable modes of transportation in Toronto by comparing the availability of services provided across the different neighborhoods in the city.
+            </div>
+        </div>
+    </div>
+
+    <!-- Public Transportation Panel -->
+    <div class="calcite-panels calcite-panels-right calcite-bg-light calcite-text-dark panel-group">
+        <div id="publicT" class="panel collapse">
+            <div id="headingpt" class="panel-heading calcite-bgcolor-light-green">
+                <div class="panel-title">
+                    <a class="panel-toggle collapsed" role="button" data-toggle="collapse"><span class="glyphicon glyphicon-superscript" aria-hidden="true"></span><span class="panel-label">Toronto Transit</span></a>
+                    <a class="panel-close" role="button" data-toggle="collapse" data-target="#publicT"><span class="esri-icon esri-icon-close" aria-hidden="true"></span></a>
+                </div>
+            </div>
+            <div id="headingptt" class="panel-body">
+                The comparison is based on the number of bus stops in respective neighborhoods. </br>
+
+                <button id="bschoolst" data-dojo-type="dijit/form/Button">Schools vs. Transit</button>
+                <button id="bpoit" data-dojo-type="dijit/form/Button">Points of Interest vs. Transit</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Cycling Panel -->
+    <div class="calcite-panels calcite-panels-right calcite-bg-light calcite-text-dark panel-group">
+        <div id="cycling" class="panel collapse">
+            <div id="headingc" class="panel-heading calcite-bgcolor-light-green">
+                <div class="panel-title">
+                    <a class="panel-toggle collapsed" role="button" data-toggle="collapse"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span><span class="panel-label">Cycling</span></a>
+                    <a class="panel-close" role="button" data-toggle="collapse" data-target="#cycling"><span class="esri-icon esri-icon-close" aria-hidden="true"></span></a>
+                </div>
+            </div>
+            <div id="headingcc" class="panel-body">
+                The comparison is based on the number of bike rack locations in respective neighborhoods. </br>
+
+                <button id="bschoolsc" data-dojo-type="dijit/form/Button">Schools vs. Cycling</button>
+                <button id="bpoic" data-dojo-type="dijit/form/Button">Points of Interest vs. Cycling</button>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- /.calcite-panels -->
+	
+	<!-- PREPRED BY TEAM ATLAS (MEMBERS: AARON BODA, GULED SHEIKH, PATRICIA DHUP, ARIO HADIAN) FOR THE ECCE ESRI APP CHALLENGE 2017 -->
+
+</body>
+<div id="map" class="map">
+    <div id="HomeButton"></div>
+</div>
+
+</html>

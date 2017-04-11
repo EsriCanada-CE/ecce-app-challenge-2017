@@ -1,0 +1,3883 @@
+{
+  "mainPanelIcon": "",
+  "layerInfos": [
+    {
+      "layer": "csv_8045",
+      "label": "CO2 Emissions by User",
+      "refresh": false,
+      "url": "https://docs.google.com/spreadsheets/d/1YZXaPCgOYZf2MPUREcIj0Nw4DJGL_u4T70i9EVW8cfY/pub?gid=254271371&single=true&output=csv",
+      "id": "csv_8045",
+      "symbolData": {
+        "symbolType": "LayerSymbol",
+        "symbol": {
+          "color": [
+            168,
+            0,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "clusteringEnabled": false,
+        "displayFeatureCount": true,
+        "_highLightColor": "#ffffff",
+        "icon": {
+          "color": [
+            168,
+            0,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "clusterType": "CustomCluster",
+        "iconType": "LayerIcon",
+        "renderer": {
+          "_cache": {
+            "0": {
+              "root": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 18
+              },
+              "minSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 19
+              },
+              "maxSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 20
+              }
+            },
+            "colorInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 16
+            },
+            "opacityInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 17
+            }
+          },
+          "values": [
+            "Van/Truck/SUV",
+            "Car",
+            "Public Transit Bus",
+            "School Bus",
+            "Bicycle",
+            "Walk"
+          ],
+          "_symbols": {
+            "Van/Truck/SUV": {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            "Car": {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            "Public Transit Bus": {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            "School Bus": {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            "Bicycle": {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            "Walk": {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          },
+          "infos": [
+            {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          ],
+          "defaultSymbol": null,
+          "attributeField": "Vehicle",
+          "_multiple": false,
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "field": "CO2Trip",
+              "valueExpression": null,
+              "valueUnit": "unknown",
+              "minSize": 8,
+              "maxSize": 50,
+              "minDataValue": 0,
+              "maxDataValue": 4417.2
+            }
+          ],
+          "authoringInfo": {
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "minSliderValue": 0,
+                "maxSliderValue": 4417.2
+              }
+            ]
+          },
+          "_compiledFunc": null
+        },
+        "s": "",
+        "svg": {},
+        "panelHTML": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(168, 0, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+        "userDefinedSymbol": true,
+        "layerId": "csv_8045",
+        "selectedId": "imageGFX_0",
+        "featureDisplayOptions": {
+          "groupEnabled": false,
+          "groupByRenderer": false,
+          "groupByField": true,
+          "fields": [],
+          "groupField": {
+            "name": "__OBJECTID",
+            "label": ""
+          },
+          "groupByRendererOptions": {
+            "fields": [
+              {
+                "name": "Vehicle"
+              }
+            ],
+            "values": [
+              {
+                "value": " === 'Van/Truck/SUV'",
+                "label": "Van/Truck/SUV"
+              },
+              {
+                "value": " === 'Car'",
+                "label": "Car"
+              },
+              {
+                "value": " === 'Public Transit Bus'",
+                "label": "Public Transit Bus"
+              },
+              {
+                "value": " === 'School Bus'",
+                "label": "School Bus"
+              },
+              {
+                "value": " === 'Bicycle'",
+                "label": "Bicycle"
+              },
+              {
+                "value": " === 'Walk'",
+                "label": "Walk"
+              }
+            ]
+          }
+        }
+      },
+      "geometryType": "esriGeometryPoint",
+      "renderer": {
+        "_cache": {
+          "0": {
+            "root": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 8
+            },
+            "minSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 9
+            },
+            "maxSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 10
+            }
+          },
+          "colorInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 6
+          },
+          "opacityInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 7
+          }
+        },
+        "values": [
+          "Van/Truck/SUV",
+          "Car",
+          "Public Transit Bus",
+          "School Bus",
+          "Bicycle",
+          "Walk"
+        ],
+        "_symbols": {
+          "Van/Truck/SUV": {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          "Car": {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Car"
+          },
+          "Public Transit Bus": {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          "School Bus": {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "School Bus"
+          },
+          "Bicycle": {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Bicycle"
+          },
+          "Walk": {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Walk"
+          }
+        },
+        "infos": [
+          {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Car"
+          },
+          {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "School Bus"
+          },
+          {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Bicycle"
+          },
+          {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Walk"
+          }
+        ],
+        "defaultSymbol": null,
+        "attributeField": "Vehicle",
+        "_multiple": false,
+        "visualVariables": [
+          {
+            "type": "sizeInfo",
+            "field": "CO2Trip",
+            "valueExpression": null,
+            "valueUnit": "unknown",
+            "minSize": 8,
+            "maxSize": 50,
+            "minDataValue": 0,
+            "maxDataValue": 4417.2
+          }
+        ],
+        "authoringInfo": {
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "minSliderValue": 0,
+              "maxSliderValue": 4417.2
+            }
+          ]
+        },
+        "_compiledFunc": null
+      },
+      "fields": [
+        {
+          "name": "__OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "__OBJECTID",
+          "editable": false,
+          "nullable": false
+        },
+        {
+          "name": "Nickname",
+          "type": "esriFieldTypeString",
+          "alias": "Nickname",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Group",
+          "type": "esriFieldTypeString",
+          "alias": "Group",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "School",
+          "type": "esriFieldTypeString",
+          "alias": "School",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Distance",
+          "type": "esriFieldTypeDouble",
+          "alias": "Distance",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Time",
+          "type": "esriFieldTypeInteger",
+          "alias": "Time",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Latitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Latitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Longitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Longitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Vehicle",
+          "type": "esriFieldTypeString",
+          "alias": "Vehicle",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "NumPeople",
+          "type": "esriFieldTypeInteger",
+          "alias": "NumPeople",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CO2Trip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CO2Trip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "TreeTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "TreeTrip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CalTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CalTrip",
+          "editable": true,
+          "nullable": true
+        }
+      ],
+      "panelImageData": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(168, 0, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+      "imageData": "<div class=\"imageDataGFX\"><svg overflow=\"hidden\" width=\"28\" height=\"28\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(168, 0, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojogfxstrokestyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,14.00000000,14.00000000)\"></circle></svg></div>"
+    },
+    {
+      "layer": "csv_6014",
+      "label": "Calories Expended by User",
+      "refresh": false,
+      "url": "https://docs.google.com/spreadsheets/d/1YZXaPCgOYZf2MPUREcIj0Nw4DJGL_u4T70i9EVW8cfY/pub?gid=254271371&single=true&output=csv",
+      "id": "csv_6014",
+      "symbolData": {
+        "symbolType": "LayerSymbol",
+        "symbol": {
+          "color": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "clusteringEnabled": false,
+        "displayFeatureCount": true,
+        "_highLightColor": "#ffffff",
+        "icon": {
+          "color": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "clusterType": "CustomCluster",
+        "iconType": "LayerIcon",
+        "renderer": {
+          "_cache": {
+            "0": {
+              "root": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 3
+              },
+              "minSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 4
+              },
+              "maxSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 5
+              }
+            },
+            "colorInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 1
+            },
+            "opacityInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 2
+            }
+          },
+          "values": [
+            "Van/Truck/SUV",
+            "Car",
+            "Public Transit Bus",
+            "School Bus",
+            "Bicycle",
+            "Walk"
+          ],
+          "_symbols": {
+            "Van/Truck/SUV": {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            "Car": {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            "Public Transit Bus": {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            "School Bus": {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            "Bicycle": {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            "Walk": {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          },
+          "infos": [
+            {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          ],
+          "defaultSymbol": null,
+          "attributeField": "Vehicle",
+          "_multiple": false,
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "field": "CalTrip",
+              "valueExpression": null,
+              "valueUnit": "unknown",
+              "minSize": 8,
+              "maxSize": 50,
+              "minDataValue": 0,
+              "maxDataValue": 105.4
+            }
+          ],
+          "authoringInfo": {
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "minSliderValue": 0,
+                "maxSliderValue": 105.4
+              }
+            ]
+          },
+          "_compiledFunc": null
+        },
+        "s": "",
+        "svg": {},
+        "panelHTML": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(255, 0, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+        "userDefinedSymbol": true,
+        "layerId": "csv_6014",
+        "selectedId": "imageGFX_1",
+        "featureDisplayOptions": {
+          "groupEnabled": false,
+          "groupByRenderer": false,
+          "groupByField": true,
+          "fields": [],
+          "groupField": {
+            "name": "__OBJECTID",
+            "label": ""
+          },
+          "groupByRendererOptions": {
+            "fields": [
+              {
+                "name": "Vehicle"
+              }
+            ],
+            "values": [
+              {
+                "value": " === 'Van/Truck/SUV'",
+                "label": "Van/Truck/SUV"
+              },
+              {
+                "value": " === 'Car'",
+                "label": "Car"
+              },
+              {
+                "value": " === 'Public Transit Bus'",
+                "label": "Public Transit Bus"
+              },
+              {
+                "value": " === 'School Bus'",
+                "label": "School Bus"
+              },
+              {
+                "value": " === 'Bicycle'",
+                "label": "Bicycle"
+              },
+              {
+                "value": " === 'Walk'",
+                "label": "Walk"
+              }
+            ]
+          }
+        }
+      },
+      "geometryType": "esriGeometryPoint",
+      "renderer": {
+        "_cache": {
+          "0": {
+            "root": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 3
+            },
+            "minSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 4
+            },
+            "maxSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 5
+            }
+          },
+          "colorInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 1
+          },
+          "opacityInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 2
+          }
+        },
+        "values": [
+          "Van/Truck/SUV",
+          "Car",
+          "Public Transit Bus",
+          "School Bus",
+          "Bicycle",
+          "Walk"
+        ],
+        "_symbols": {
+          "Van/Truck/SUV": {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          "Car": {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Car"
+          },
+          "Public Transit Bus": {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          "School Bus": {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "School Bus"
+          },
+          "Bicycle": {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Bicycle"
+          },
+          "Walk": {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Walk"
+          }
+        },
+        "infos": [
+          {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Car"
+          },
+          {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "School Bus"
+          },
+          {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Bicycle"
+          },
+          {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid",
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "_inherited": {
+                "p": 2
+              }
+            },
+            "label": "Walk"
+          }
+        ],
+        "defaultSymbol": null,
+        "attributeField": "Vehicle",
+        "_multiple": false,
+        "visualVariables": [
+          {
+            "type": "sizeInfo",
+            "field": "CalTrip",
+            "valueExpression": null,
+            "valueUnit": "unknown",
+            "minSize": 8,
+            "maxSize": 50,
+            "minDataValue": 0,
+            "maxDataValue": 105.4
+          }
+        ],
+        "authoringInfo": {
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "minSliderValue": 0,
+              "maxSliderValue": 105.4
+            }
+          ]
+        },
+        "_compiledFunc": null
+      },
+      "fields": [
+        {
+          "name": "__OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "__OBJECTID",
+          "editable": false,
+          "nullable": false
+        },
+        {
+          "name": "Nickname",
+          "type": "esriFieldTypeString",
+          "alias": "Nickname",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Group",
+          "type": "esriFieldTypeString",
+          "alias": "Group",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "School",
+          "type": "esriFieldTypeString",
+          "alias": "School",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Distance",
+          "type": "esriFieldTypeDouble",
+          "alias": "Distance",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Time",
+          "type": "esriFieldTypeInteger",
+          "alias": "Time",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Latitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Latitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Longitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Longitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Vehicle",
+          "type": "esriFieldTypeString",
+          "alias": "Vehicle",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "NumPeople",
+          "type": "esriFieldTypeInteger",
+          "alias": "NumPeople",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CO2Trip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CO2Trip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "TreeTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "TreeTrip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CalTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CalTrip",
+          "editable": true,
+          "nullable": true
+        }
+      ],
+      "panelImageData": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(255, 0, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+      "imageData": "<div class=\"imageDataGFX\"><svg overflow=\"hidden\" width=\"28\" height=\"28\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(255, 0, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojogfxstrokestyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,14.00000000,14.00000000)\"></circle></svg></div>"
+    },
+    {
+      "layer": "csv_9681",
+      "label": "User by Class",
+      "refresh": false,
+      "url": "https://docs.google.com/spreadsheets/d/1YZXaPCgOYZf2MPUREcIj0Nw4DJGL_u4T70i9EVW8cfY/pub?gid=254271371&single=true&output=csv",
+      "id": "csv_9681",
+      "symbolData": {
+        "symbolType": "LayerSymbol",
+        "symbol": {
+          "color": [
+            255,
+            255,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "clusteringEnabled": false,
+        "displayFeatureCount": true,
+        "_highLightColor": "#ffffff",
+        "icon": {
+          "color": [
+            255,
+            255,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "clusterType": "CustomCluster",
+        "iconType": "LayerIcon",
+        "renderer": {
+          "_cache": {
+            "0": {
+              "root": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 13
+              },
+              "minSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 14
+              },
+              "maxSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 15
+              }
+            },
+            "colorInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 11
+            },
+            "opacityInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 12
+            }
+          },
+          "values": [
+            "Van/Truck/SUV",
+            "Car",
+            "Public Transit Bus",
+            "School Bus",
+            "Bicycle",
+            "Walk"
+          ],
+          "_symbols": {
+            "Van/Truck/SUV": {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            "Car": {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            "Public Transit Bus": {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            "School Bus": {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            "Bicycle": {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            "Walk": {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          },
+          "infos": [
+            {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          ],
+          "defaultSymbol": null,
+          "attributeField": "Vehicle",
+          "_multiple": false,
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "field": "CO2Trip",
+              "valueExpression": null,
+              "valueUnit": "unknown",
+              "minSize": 8,
+              "maxSize": 50,
+              "minDataValue": 0,
+              "maxDataValue": 4417.2
+            }
+          ],
+          "authoringInfo": {
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "minSliderValue": 0,
+                "maxSliderValue": 4417.2
+              }
+            ]
+          },
+          "_compiledFunc": null
+        },
+        "s": "",
+        "svg": {},
+        "panelHTML": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(255, 255, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+        "userDefinedSymbol": true,
+        "layerId": "csv_9681",
+        "selectedId": "imageGFX_3",
+        "featureDisplayOptions": {
+          "groupEnabled": false,
+          "groupByRenderer": false,
+          "groupByField": true,
+          "fields": [],
+          "groupField": {
+            "name": "__OBJECTID",
+            "label": ""
+          },
+          "groupByRendererOptions": {
+            "fields": [
+              {
+                "name": "Vehicle"
+              }
+            ],
+            "values": [
+              {
+                "value": " === 'Van/Truck/SUV'",
+                "label": "Van/Truck/SUV"
+              },
+              {
+                "value": " === 'Car'",
+                "label": "Car"
+              },
+              {
+                "value": " === 'Public Transit Bus'",
+                "label": "Public Transit Bus"
+              },
+              {
+                "value": " === 'School Bus'",
+                "label": "School Bus"
+              },
+              {
+                "value": " === 'Bicycle'",
+                "label": "Bicycle"
+              },
+              {
+                "value": " === 'Walk'",
+                "label": "Walk"
+              }
+            ]
+          }
+        }
+      },
+      "geometryType": "esriGeometryPoint",
+      "renderer": {
+        "_cache": {
+          "0": {
+            "root": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 13
+            },
+            "minSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 14
+            },
+            "maxSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 15
+            }
+          },
+          "colorInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 11
+          },
+          "opacityInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 12
+          }
+        },
+        "values": [
+          "Van/Truck/SUV",
+          "Car",
+          "Public Transit Bus",
+          "School Bus",
+          "Bicycle",
+          "Walk"
+        ],
+        "_symbols": {
+          "Van/Truck/SUV": {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          "Car": {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Car"
+          },
+          "Public Transit Bus": {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          "School Bus": {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "School Bus"
+          },
+          "Bicycle": {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Bicycle"
+          },
+          "Walk": {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Walk"
+          }
+        },
+        "infos": [
+          {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Car"
+          },
+          {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "School Bus"
+          },
+          {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Bicycle"
+          },
+          {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Walk"
+          }
+        ],
+        "defaultSymbol": null,
+        "attributeField": "Vehicle",
+        "_multiple": false,
+        "visualVariables": [
+          {
+            "type": "sizeInfo",
+            "field": "CO2Trip",
+            "valueExpression": null,
+            "valueUnit": "unknown",
+            "minSize": 8,
+            "maxSize": 50,
+            "minDataValue": 0,
+            "maxDataValue": 4417.2
+          }
+        ],
+        "authoringInfo": {
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "minSliderValue": 0,
+              "maxSliderValue": 4417.2
+            }
+          ]
+        },
+        "_compiledFunc": null
+      },
+      "fields": [
+        {
+          "name": "__OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "__OBJECTID",
+          "editable": false,
+          "nullable": false
+        },
+        {
+          "name": "Nickname",
+          "type": "esriFieldTypeString",
+          "alias": "Nickname",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Group",
+          "type": "esriFieldTypeString",
+          "alias": "Group",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "School",
+          "type": "esriFieldTypeString",
+          "alias": "School",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Distance",
+          "type": "esriFieldTypeDouble",
+          "alias": "Distance",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Time",
+          "type": "esriFieldTypeInteger",
+          "alias": "Time",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Latitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Latitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Longitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Longitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Vehicle",
+          "type": "esriFieldTypeString",
+          "alias": "Vehicle",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "NumPeople",
+          "type": "esriFieldTypeInteger",
+          "alias": "NumPeople",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CO2Trip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CO2Trip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "TreeTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "TreeTrip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CalTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CalTrip",
+          "editable": true,
+          "nullable": true
+        }
+      ],
+      "panelImageData": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(255, 255, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+      "imageData": "<div class=\"imageDataGFX\"><svg overflow=\"hidden\" width=\"28\" height=\"28\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(255, 255, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojogfxstrokestyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,14.00000000,14.00000000)\"></circle></svg></div>"
+    },
+    {
+      "layer": "csv_8171",
+      "label": "User by School",
+      "refresh": false,
+      "url": "https://docs.google.com/spreadsheets/d/1YZXaPCgOYZf2MPUREcIj0Nw4DJGL_u4T70i9EVW8cfY/pub?gid=254271371&single=true&output=csv",
+      "id": "csv_8171",
+      "symbolData": {
+        "symbolType": "LayerSymbol",
+        "symbol": {
+          "color": [
+            56,
+            168,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "clusteringEnabled": false,
+        "_highLightColor": "#ffffff",
+        "icon": {
+          "color": [
+            56,
+            168,
+            0,
+            255
+          ],
+          "size": 6,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              153,
+              153,
+              153,
+              255
+            ],
+            "width": 0.75,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "iconType": "LayerIcon",
+        "renderer": {
+          "_cache": {
+            "0": {
+              "root": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 8
+              },
+              "minSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 9
+              },
+              "maxSize": {
+                "hasExpr": false,
+                "compiledFunc": null,
+                "isScaleDriven": false,
+                "dependsOnView": false,
+                "version": 10
+              }
+            },
+            "colorInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 6
+            },
+            "opacityInfo": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 7
+            }
+          },
+          "values": [
+            "Van/Truck/SUV",
+            "Car",
+            "Public Transit Bus",
+            "School Bus",
+            "Bicycle",
+            "Walk"
+          ],
+          "_symbols": {
+            "Van/Truck/SUV": {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            "Car": {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            "Public Transit Bus": {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            "School Bus": {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            "Bicycle": {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            "Walk": {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          },
+          "infos": [
+            {
+              "value": "Van/Truck/SUV",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 168,
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Van/Truck/SUV"
+            },
+            {
+              "value": "Car",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 0,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Car"
+            },
+            {
+              "value": "Public Transit Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "g": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Public Transit Bus"
+            },
+            {
+              "value": "School Bus",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "School Bus"
+            },
+            {
+              "value": "Bicycle",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 170,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Bicycle"
+            },
+            {
+              "value": "Walk",
+              "symbol": {
+                "style": "circle",
+                "color": {
+                  "r": 56,
+                  "g": 168,
+                  "b": 0
+                },
+                "size": 8,
+                "outline": {
+                  "width": 1,
+                  "color": {
+                    "r": 153,
+                    "g": 153,
+                    "b": 153
+                  },
+                  "style": "solid",
+                  "_inherited": {
+                    "p": 2
+                  }
+                },
+                "_inherited": {
+                  "p": 2
+                }
+              },
+              "label": "Walk"
+            }
+          ],
+          "defaultSymbol": null,
+          "attributeField": "Vehicle",
+          "_multiple": false,
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "field": "CO2Trip",
+              "valueExpression": null,
+              "valueUnit": "unknown",
+              "minSize": 8,
+              "maxSize": 50,
+              "minDataValue": 0,
+              "maxDataValue": 4417.2
+            }
+          ],
+          "authoringInfo": {
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "minSliderValue": 0,
+                "maxSliderValue": 4417.2
+              }
+            ]
+          },
+          "_compiledFunc": null
+        },
+        "s": "",
+        "svg": {},
+        "panelHTML": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(56, 168, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+        "userDefinedSymbol": true,
+        "layerId": "csv_8171",
+        "selectedId": "imageGFX_5",
+        "featureDisplayOptions": {
+          "groupEnabled": false,
+          "groupByRenderer": false,
+          "groupByField": true,
+          "fields": [],
+          "groupField": {
+            "name": "__OBJECTID",
+            "label": ""
+          },
+          "groupByRendererOptions": {
+            "fields": [
+              {
+                "name": "Vehicle"
+              }
+            ],
+            "values": [
+              {
+                "value": " === 'Van/Truck/SUV'",
+                "label": "Van/Truck/SUV"
+              },
+              {
+                "value": " === 'Car'",
+                "label": "Car"
+              },
+              {
+                "value": " === 'Public Transit Bus'",
+                "label": "Public Transit Bus"
+              },
+              {
+                "value": " === 'School Bus'",
+                "label": "School Bus"
+              },
+              {
+                "value": " === 'Bicycle'",
+                "label": "Bicycle"
+              },
+              {
+                "value": " === 'Walk'",
+                "label": "Walk"
+              }
+            ]
+          }
+        }
+      },
+      "geometryType": "esriGeometryPoint",
+      "renderer": {
+        "_cache": {
+          "0": {
+            "root": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 18
+            },
+            "minSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 19
+            },
+            "maxSize": {
+              "hasExpr": false,
+              "compiledFunc": null,
+              "isScaleDriven": false,
+              "dependsOnView": false,
+              "version": 20
+            }
+          },
+          "colorInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 16
+          },
+          "opacityInfo": {
+            "hasExpr": false,
+            "compiledFunc": null,
+            "isScaleDriven": false,
+            "dependsOnView": false,
+            "version": 17
+          }
+        },
+        "values": [
+          "Van/Truck/SUV",
+          "Car",
+          "Public Transit Bus",
+          "School Bus",
+          "Bicycle",
+          "Walk"
+        ],
+        "_symbols": {
+          "Van/Truck/SUV": {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          "Car": {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Car"
+          },
+          "Public Transit Bus": {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          "School Bus": {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "School Bus"
+          },
+          "Bicycle": {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Bicycle"
+          },
+          "Walk": {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Walk"
+          }
+        },
+        "infos": [
+          {
+            "value": "Van/Truck/SUV",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 168,
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Van/Truck/SUV"
+          },
+          {
+            "value": "Car",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 0,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Car"
+          },
+          {
+            "value": "Public Transit Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "g": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Public Transit Bus"
+          },
+          {
+            "value": "School Bus",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "School Bus"
+          },
+          {
+            "value": "Bicycle",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 170,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Bicycle"
+          },
+          {
+            "value": "Walk",
+            "symbol": {
+              "style": "circle",
+              "color": {
+                "r": 56,
+                "g": 168,
+                "b": 0
+              },
+              "size": 8,
+              "outline": {
+                "width": 1,
+                "color": {
+                  "r": 153,
+                  "g": 153,
+                  "b": 153
+                },
+                "style": "solid"
+              }
+            },
+            "label": "Walk"
+          }
+        ],
+        "defaultSymbol": null,
+        "attributeField": "Vehicle",
+        "_multiple": false,
+        "visualVariables": [
+          {
+            "type": "sizeInfo",
+            "field": "CO2Trip",
+            "valueExpression": null,
+            "valueUnit": "unknown",
+            "minSize": 8,
+            "maxSize": 50,
+            "minDataValue": 0,
+            "maxDataValue": 4417.2
+          }
+        ],
+        "authoringInfo": {
+          "visualVariables": [
+            {
+              "type": "sizeInfo",
+              "minSliderValue": 0,
+              "maxSliderValue": 4417.2
+            }
+          ]
+        },
+        "_compiledFunc": null
+      },
+      "fields": [
+        {
+          "name": "__OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "__OBJECTID",
+          "editable": false,
+          "nullable": false
+        },
+        {
+          "name": "Nickname",
+          "type": "esriFieldTypeString",
+          "alias": "Nickname",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Group",
+          "type": "esriFieldTypeString",
+          "alias": "Group",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "School",
+          "type": "esriFieldTypeString",
+          "alias": "School",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Distance",
+          "type": "esriFieldTypeDouble",
+          "alias": "Distance",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Time",
+          "type": "esriFieldTypeInteger",
+          "alias": "Time",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Latitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Latitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Longitude",
+          "type": "esriFieldTypeDouble",
+          "alias": "Longitude",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "Vehicle",
+          "type": "esriFieldTypeString",
+          "alias": "Vehicle",
+          "length": 255,
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "NumPeople",
+          "type": "esriFieldTypeInteger",
+          "alias": "NumPeople",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CO2Trip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CO2Trip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "TreeTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "TreeTrip",
+          "editable": true,
+          "nullable": true
+        },
+        {
+          "name": "CalTrip",
+          "type": "esriFieldTypeDouble",
+          "alias": "CalTrip",
+          "editable": true,
+          "nullable": true
+        }
+      ],
+      "panelImageData": "<svg overflow=\"hidden\" width=\"44\" height=\"44\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(56, 168, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojoGfxStrokeStyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,22.00000000,22.00000000)\"></circle></svg>",
+      "imageData": "<div class=\"imageDataGFX\"><svg overflow=\"hidden\" width=\"28\" height=\"28\" style=\"touch-action: none;\"><defs></defs><circle fill=\"rgb(56, 168, 0)\" fill-opacity=\"1\" stroke=\"rgb(153, 153, 153)\" stroke-opacity=\"1\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"4\" cx=\"0\" cy=\"0\" r=\"4\" fill-rule=\"evenodd\" stroke-dasharray=\"none\" dojogfxstrokestyle=\"solid\" transform=\"matrix(1.00000000,0.00000000,0.00000000,1.00000000,14.00000000,14.00000000)\"></circle></svg></div>"
+    }
+  ],
+  "mapID": "ffb0cd4fd59e4689b5769aa43a4b48fd",
+  "mainPanelText": "",
+  "refreshInterval": "",
+  "refreshEnabled": false,
+  "countEnabled": true,
+  "displayPanelIcon": false,
+  "hidePanel": false,
+  "continuousRefreshEnabled": false
+}

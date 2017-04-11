@@ -1,0 +1,17 @@
+/********************************************************************** 
+   CSS List Styling
+   Property Online Project
+   January 2017
+   Liam Osler
+   SUTN Legal Aspects of Surverying
+   SUTN Technical Writing
+ **********************************************************************/
+ 
+ 
+
+.tablestyle{
+	left: 0px;
+	top: 20px;
+	width: 100%;
+	overflow-x: hidden;
+}
