@@ -531,7 +531,7 @@
           },
           "zoomToFeature": false,
           "intersectSearchedLocation": false,
-          "routeService": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+          "routeService": "https://utility.arcgis.com/usrsvcs/appservices/k48xGRWbvkcodAS6/rest/services/World/Route/NAServer/Route_World",
           "directionLengthUnit": {
             "bufferUnit": "UNIT_KILOMETER",
             "routeUnit": "KILOMETERS",
