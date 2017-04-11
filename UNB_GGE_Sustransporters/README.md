@@ -1,10 +1,8 @@
-# Heading
+# Sustransporters
 
-Sustransporters
 ---------------------------------------------
-## Sub-heading
 
-Welcome to the Transportation Calculator
+## Welcome to the Transportation Calculator
 
 ---------------------------------------------
 # Our Goal
@@ -14,6 +12,7 @@ factors we are facing, it is important to rise the public's awareness that how m
 enviroment. This app was designed to be a user-friendly tool to help users find not only a efficient but also an eco way of commuting. 
 
 ---------------------------------------------
+
 # How it works
 
 This app has several widgets, each of them provides a specific function to help users to commute “green”. 
