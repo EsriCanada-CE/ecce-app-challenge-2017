@@ -1,0 +1,57 @@
+{
+  "filters": [
+    {
+      "layerId": "Carbon_3345",
+      "url": "http://services1.arcgis.com/V0HKtaD602PKtWJz/arcgis/rest/services/Carbon/FeatureServer/0",
+      "name": "Carbon Footprint",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "Start",
+              "label": "Start",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Start is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "End_",
+              "label": "End_",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "End is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "icon": "",
+      "enableMapFilter": true
+    }
+  ]
+}

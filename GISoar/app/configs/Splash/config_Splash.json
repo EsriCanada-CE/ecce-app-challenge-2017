@@ -1,0 +1,35 @@
+{
+  "splash": {
+    "splashContent": "<div> </div><div style=\"text-align: center;\"><h1><span style=\"color: rgb(47, 79, 79);\"><font size=\"7\">GISoar </font></span></h1><h2><span style=\"color: rgb(47, 79, 79);\"><font size=\"5\">Carbon Flight Planner </font></span></h2><h3><span style=\"font-weight: normal;\"><span style=\"color: rgb(47, 79, 79);\"><font size=\"4\">Reduce your Carbon Footprint one flight at a time! </font></span></span></h3></div>",
+    "requireConfirm": false,
+    "confirm": {
+      "text": "",
+      "color": "#ffffff",
+      "transparency": 0
+    },
+    "showOption": true,
+    "confirmEverytime": true,
+    "contentVertical": "top",
+    "size": {
+      "mode": "percent",
+      "percent": "50%",
+      "wh": {
+        "w": 600,
+        "h": 264
+      }
+    },
+    "background": {
+      "mode": "image",
+      "image": "${appPath}/configs/Splash/image_1.jpeg",
+      "type": "fill",
+      "fileName": "Plane%20in%20CLouds.jpg",
+      "color": "#485566",
+      "transparency": 0
+    },
+    "button": {
+      "color": "#518dca",
+      "transparency": 0,
+      "text": "OK"
+    }
+  }
+}
