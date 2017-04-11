@@ -164,11 +164,11 @@
           "fontColor": "#000000",
           "searchLayers": [
             {
-              "url": "https://traffic.arcgis.com/arcgis/rest/services/World/Traffic/MapServer/44",
+              "url": "https://utility.arcgis.com/usrsvcs/appservices/B59QZQ7FrLT9zk8Q/rest/services/World/Traffic/MapServer/44",
               "geometryType": "esriGeometryPolygon",
               "id": "Traffic_3835_44",
               "layerId": "44",
-              "baseURL": "https://traffic.arcgis.com/arcgis/rest/services/World/Traffic/MapServer/",
+              "baseURL": "https://utility.arcgis.com/usrsvcs/appservices/B59QZQ7FrLT9zk8Q/rest/services/World/Traffic/MapServer",
               "isMapServer": true,
               "title": "Network Dataset Extents"
             }
@@ -188,7 +188,7 @@
           },
           "zoomToFeature": true,
           "intersectSearchedLocation": true,
-          "routeService": "http://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+          "routeService": "https://utility.arcgis.com/usrsvcs/appservices/8vyMyhSsT2aL8H2r/rest/services/World/Route/NAServer/Route_World",
           "directionLengthUnit": {
             "bufferUnit": "UNIT_STATUTE_MILE",
             "routeUnit": "MILES",
@@ -251,7 +251,7 @@
             "showInfoWindowOnSelect": true,
             "sources": [
               {
-                "url": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+                "url": "https://utility.arcgis.com/usrsvcs/appservices/F2j1Wh0ujVoSscib/rest/services/World/GeocodeServer",
                 "name": "Esri World Geocoder",
                 "singleLineFieldName": "SingleLine",
                 "placeholder": "Esri World Geocoder",
@@ -400,15 +400,7 @@
     "portalUrl": "http://unbgis.maps.arcgis.com",
     "appProxy": {
       "mapItemId": "7ff0bf0f41eb4242967f97e3b9fcdb79",
-      "proxyItems": [
-        {
-          "sourceUrl": "https://traffic.arcgis.com/arcgis/rest/services/World/Traffic/MapServer",
-          "title": "World Traffic Service",
-          "premium": true,
-          "consumeCredits": false,
-          "useProxy": false
-        }
-      ]
+      "proxyItems": []
     }
   },
   "widgetPool": {
@@ -427,9 +419,9 @@
         "version": "2.4",
         "uri": "widgets/Directions/Widget",
         "config": {
-          "routeTaskUrl": "http://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
-          "travelModesUrl": "http://logistics.arcgis.com/arcgis/rest/services/World/Utilities/GPServer",
-          "trafficLayerUrl": "http://traffic.arcgis.com/arcgis/rest/services/World/Traffic/MapServer/NorthAmerica/6",
+          "routeTaskUrl": "https://utility.arcgis.com/usrsvcs/appservices/8vyMyhSsT2aL8H2r/rest/services/World/Route/NAServer/Route_World",
+          "travelModesUrl": "https://utility.arcgis.com/usrsvcs/appservices/OHM05eNudChR9Vpj/rest/services/World/Utilities/GPServer",
+          "trafficLayerUrl": "https://utility.arcgis.com/usrsvcs/appservices/B59QZQ7FrLT9zk8Q/rest/services/World/Traffic/MapServer",
           "routeOptions": {
             "directionsLanguage": "en",
             "directionsLengthUnits": "esriKilometers",
@@ -444,7 +436,7 @@
             "arcgisGeocoder": false,
             "geocoders": [
               {
-                "url": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+                "url": "https://utility.arcgis.com/usrsvcs/appservices/F2j1Wh0ujVoSscib/rest/services/World/GeocodeServer",
                 "placeholder": "Find address or place"
               }
             ]
