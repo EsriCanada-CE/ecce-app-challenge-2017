@@ -1,3 +1,11 @@
+## Note:
+
+The app challenge for 2017 has concluded, with all student teams having completing their apps by March 31, 2017.  Code and documentation from all 17 participating teams have been included in the subfolders of this repository, organized by team name.  To introduce you better to this year's particpating students, you can 'meet the teams' on our ECCE GitHub webpage: [https://esricanada-ce.github.io](https://esricanada-ce.github.io).  There you will find each team's information presented for the 2017, along with links to live demonstrations of the apps, video presentations, and documentation submitted by each team.
+
+Competition results and winners will be announced and recorded here by the end of April, 2017.
+
+---
+
 ## Instructions
 These are the instructions for submitting your work during the ECCE App Challenge. First, you should create a README.md Markdown file for your app ([this link will show you how to create a Markdown file](http://markdownlivepreview.com)).  The README file should state the goals of your app, and how to use it and deploy it.  For example, check out the [README file from last year's App Challenge winners](https://github.com/EsriCanada-CE/ecce-app-challenge-2016/tree/master/Mapster).
 
