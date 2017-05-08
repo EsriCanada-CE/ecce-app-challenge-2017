@@ -1,3 +1,11 @@
+# App Challenge 2017 Winner
+
+***Team Sweet e-Motion*** *is the winner of the App Challenge 2017*!
+
+Congratulations from everyone at Esri Canada.
+
+---
+
 # Traffic Hazard Data Management App
 
 ## Mission Statement

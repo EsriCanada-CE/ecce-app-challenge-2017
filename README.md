@@ -1,24 +1,19 @@
-## Note:
+## About ECCE App Challenge:
 
-The app challenge for 2017 has concluded, with all student teams having completing their apps by March 31, 2017.  Code and documentation from all 17 participating teams have been included in the subfolders of this repository, organized by team name.  To introduce you better to this year's particpating students, you can 'meet the teams' on our ECCE GitHub webpage: [https://esricanada-ce.github.io](https://esricanada-ce.github.io).  There you will find each team's information presented for the 2017 competition, along with links to live demonstrations of the apps, video presentations, and documentation submitted by each team.
+The ECCE App Challenge is an annual competetition that engages teams of students at each of the [Esri Canada GIS Centers of Excellence](https://ecce.esri.ca/wpecce/schools/) in the creation of innovative GIS applications within a one-week period, using Esri technology and Open Data to address a specific theme.  Full details of the App Challenge can be found on the [ECCE website](https://ecce.esri.ca/wpecce/app-challenge/).  This is the third iteration of the challenge - all of the submissions from student teams participating in the challenge in previous years remain available in the [2015](https://github.com/EsriCanada-CE/ecce-app-challenge-2015) and [2016](https://github.com/EsriCanada-CE/ecce-app-challenge-2016) repositories on GitHub.
 
-Competition results and winners will be announced and recorded here by the end of April, 2017.
+For 2017, the theme chosen for the challenge was ***sustainable transportation***.  A total of 17 teams participated to create new apps that addressed aspects of this theme, with all submissions completed by March 31st.  The code and documentation from each team is included in the subfolders of this repository, organized by team name.  To introduce you better to this year's particpating students, you can 'meet the teams' on our new ECCE GitHub webpage: [https://esricanada-ce.github.io](https://esricanada-ce.github.io).  You will find each team's details presented for the 2017 challenge, along with links to live versions of their apps hosted online, documentation, and video presentations.
 
----
 
-## Instructions
+## App Challenge Results:
 
-These are the instructions for submitting your work during the ECCE App Challenge. First, you should create a README.md Markdown file for your app ([this link will show you how to create a Markdown file](http://markdownlivepreview.com)).  The README file should state the goals of your app, and how to use it and deploy it.  For example, check out the [README file from last year's App Challenge winners](https://github.com/EsriCanada-CE/ecce-app-challenge-2016/tree/master/Mapster).
+All of the apps were reviewed by three external judges, and the team with the best aggregate score was chosen as the winner.  Esri Canada is pleased to announce the winning team for the 2017 App Challenge:
 
-In addition to the README file, the following items should be included in your App Challenge submission:
+**[Team Sweet e-Motion](https://esricanada-ce.github.io/appchallenge/2017/teams/yorku/Team_Sweet_e_Motion/) from York University**
 
-1. Mission statement for your app (i.e., what the apps seeks to achieve and why);
-1. Statement of the characteristics of the app that make it appealing, interesting and useful  (i.e. how does it help the end user);
-1. A video with voice over that demonstrates use of your app (can be a link to a YouTube video or a separate file); and
-1. An organized code base suitable for upload to a GitHub code repository.
+Members of this team win a trip to this year's Esri User Conference in San Diego.
 
-These deliverables are all included as criteria for the judging of your submissions, in addition to the reliability of your application (i.e., it must not be prone to crashing during use), and the quality of the user interface / user experience that it provides. 
+The first and second runners-up for the challenge are, respectively:
 
-Feel free to check out submissions from the App Challenge in previous years ([2015](https://github.com/EsriCanada-CE/ecce-app-challenge-2015), and [2016](https://github.com/EsriCanada-CE/ecce-app-challenge-2016)), and refer to the App Challenge brief sent out at the start of the competition for further clarification on what include in your submission.  When you are completed your work for the App Challenge, upload a copy of the source code for your app and all of the required deliverables to folder using a file hosting service (e.g., Dropbox, Google Drive, OneDrive, Box), and email a link to the folder to [Michael Leahy](mailto:mleahy@esri.ca) before 5:00pm local time on the final day of the challenge.
-
-Good luck, and happy hacking!
+* **[Team Earth Link](https://esricanada-ce.github.io/appchallenge/2017/teams/uw/Team_Earth_Link/) from University of Waterloo**
+* **[Marauders-mAPP](https://esricanada-ce.github.io/appchallenge/2017/teams/mac/Marauders_mAPP/) from McMaster University**
