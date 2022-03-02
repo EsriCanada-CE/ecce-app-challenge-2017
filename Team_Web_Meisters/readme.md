@@ -1,7 +1,7 @@
 Halifax Sustainable Transit 
 Team: Web-Meisters
 ECCE App Challenge 2017
-Members: Kate MacLachlan, Liam Osler, Joshua Staboon
+Members: Kate MacLachlan, Liam Osler
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
